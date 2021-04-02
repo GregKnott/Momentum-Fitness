@@ -17,6 +17,8 @@
 		375E2AB62617497A00E1CFCA /* Momentum_FitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375E2AB52617497A00E1CFCA /* Momentum_FitnessTests.swift */; };
 		375E2AC12617497A00E1CFCA /* Momentum_FitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375E2AC02617497A00E1CFCA /* Momentum_FitnessUITests.swift */; };
 		375E2AD326177A2800E1CFCA /* AccountNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375E2AD226177A2800E1CFCA /* AccountNavigationVC.swift */; };
+		375E2AE32617819800E1CFCA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375E2AE22617819800E1CFCA /* SignInVC.swift */; };
+		375E2AEB2617852100E1CFCA /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375E2AEA2617852100E1CFCA /* SignupVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		375E2AC02617497A00E1CFCA /* Momentum_FitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Momentum_FitnessUITests.swift; sourceTree = "<group>"; };
 		375E2AC22617497A00E1CFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		375E2AD226177A2800E1CFCA /* AccountNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNavigationVC.swift; sourceTree = "<group>"; };
+		375E2AE22617819800E1CFCA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		375E2AEA2617852100E1CFCA /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 			children = (
 				375E2A9F2617497900E1CFCA /* ViewController.swift */,
 				375E2AD226177A2800E1CFCA /* AccountNavigationVC.swift */,
+				375E2AE22617819800E1CFCA /* SignInVC.swift */,
+				375E2AEA2617852100E1CFCA /* SignupVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -273,7 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				375E2AD326177A2800E1CFCA /* AccountNavigationVC.swift in Sources */,
+				375E2AEB2617852100E1CFCA /* SignupVC.swift in Sources */,
 				375E2AA02617497900E1CFCA /* ViewController.swift in Sources */,
+				375E2AE32617819800E1CFCA /* SignInVC.swift in Sources */,
 				375E2A9C2617497900E1CFCA /* AppDelegate.swift in Sources */,
 				375E2AA62617497900E1CFCA /* Momentum_Fitness.xcdatamodeld in Sources */,
 				375E2A9E2617497900E1CFCA /* SceneDelegate.swift in Sources */,

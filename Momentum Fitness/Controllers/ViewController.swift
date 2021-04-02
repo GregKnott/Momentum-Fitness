@@ -7,6 +7,16 @@
 
 import UIKit
 
+//global function to set the style of the top bar
+func styleTopBar(nav: UINavigationItem){
+    
+    //set back bar button to have no title
+    nav.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    
+    //set title bar button to the logo
+    nav.titleView = UIImageView(image: UIImage(named: "logoSmall"))
+}
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -15,18 +25,12 @@ class ViewController: UIViewController {
         
         let navBar = self.navigationController?.navigationBar
         
-        // Transparent navigation bar
+        // Transparent navigation bar - global changes
         navBar?.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navBar?.shadowImage = UIImage()
         navBar?.isTranslucent = true
-        
-//        navBar?.topItem?.titleView = UIImageView(image: UIImage(named: "logoSmall"))
-        
-        let backBarButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        backBarButton.tintColor = UIColor(ciColor: .white)
-        navigationItem.backBarButtonItem = backBarButton
-        
-        navigationItem.titleView?.contentMode = .scaleAspectFit
+        navBar?.tintColor = UIColor(ciColor: .white)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
 

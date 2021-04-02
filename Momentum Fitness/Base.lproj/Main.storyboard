@@ -29,19 +29,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Momentum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oG9-cO-fpf">
-                                <rect key="frame" x="70" y="225" width="262" height="55"/>
+                                <rect key="frame" x="70" y="181" width="262" height="55"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="46"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="VSK-Ca-VYq">
-                                <rect key="frame" x="123" y="151" width="144" height="76"/>
+                                <rect key="frame" x="123" y="107" width="144" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="JNV-ET-63L"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revamp your workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUj-rW-x5T">
-                                <rect key="frame" x="93" y="273" width="204" height="26"/>
+                                <rect key="frame" x="93" y="229" width="204" height="26"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -86,6 +86,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rjb-a5-j67"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,6 +99,34 @@
                     <view key="view" contentMode="scaleToFill" id="pbE-VW-cae">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OX-nx-GzQ">
+                                <rect key="frame" x="-14" y="359" width="419" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Signup"/>
+                                <connections>
+                                    <segue destination="oMb-S7-187" kind="show" id="Pdm-0y-N1P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plo-RA-hIM">
+                                <rect key="frame" x="-14" y="522" width="419" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Signin"/>
+                                <connections>
+                                    <segue destination="UrD-zW-NVJ" kind="show" id="VV4-q5-PPK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hc-xk-9yA">
+                                <rect key="frame" x="39" y="174" width="312" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Create a new account
+or
+Sign into existing</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fnh-Wc-A79"/>
                         <color key="backgroundColor" name="Main color"/>
                     </view>
@@ -106,6 +135,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUy-HE-lXZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1853.8461538461538" y="105.92417061611374"/>
+        </scene>
+        <!--SignupVC-->
+        <scene sceneID="toR-Tu-8SD">
+            <objects>
+                <viewController id="oMb-S7-187" customClass="SignupVC" customModule="Momentum_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vKf-y1-lyQ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="P4Y-XK-3eN"/>
+                        <color key="backgroundColor" name="Main color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hbs-xa-uc0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfK-uz-wrV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="862"/>
+        </scene>
+        <!--Sign InVC-->
+        <scene sceneID="tEz-7q-bu3">
+            <objects>
+                <viewController id="UrD-zW-NVJ" customClass="SignInVC" customModule="Momentum_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KbQ-Au-he0">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ieW-rP-SUd"/>
+                        <color key="backgroundColor" name="Main color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hMJ-i1-2og"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybe-SV-L8i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2769" y="106"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I69-14-cmK">
@@ -132,6 +193,8 @@
     </scenes>
     <resources>
         <image name="Continue" width="328" height="200"/>
+        <image name="Signin" width="419" height="200"/>
+        <image name="Signup" width="419" height="200"/>
         <image name="bg" width="390" height="542"/>
         <image name="logo" width="74" height="74.666664123535156"/>
         <image name="spashImage" width="390" height="386"/>
