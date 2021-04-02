@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,20 +13,89 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Momentum_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spashImage" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-5C-qFl">
+                                <rect key="frame" x="-31" y="-13" width="452" height="382"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="382" id="hga-YL-3DO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Yx9-1g-AY8">
+                                <rect key="frame" x="0.0" y="348" width="390" height="496"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="496" id="GIi-4H-rBT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Momentum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oG9-cO-fpf">
+                                <rect key="frame" x="70" y="181" width="262" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="46"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="VSK-Ca-VYq">
+                                <rect key="frame" x="123" y="107" width="144" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="JNV-ET-63L"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revamp your workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUj-rW-x5T">
+                                <rect key="frame" x="93" y="229" width="204" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashSilhouette" translatesAutoresizingMaskIntoConstraints="NO" id="gwP-ff-Hf9">
+                                <rect key="frame" x="29" y="391" width="344" height="219"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTi-q3-7zw">
+                                <rect key="frame" x="31" y="695" width="328" height="200"/>
+                                <state key="normal" image="Continue"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Main color"/>
+                        <constraints>
+                            <constraint firstItem="DUj-rW-x5T" firstAttribute="top" secondItem="VSK-Ca-VYq" secondAttribute="bottom" constant="46" id="0ZX-QE-mIk"/>
+                            <constraint firstItem="YTi-q3-7zw" firstAttribute="centerX" secondItem="Yx9-1g-AY8" secondAttribute="centerX" id="4pe-Yt-KIt"/>
+                            <constraint firstItem="gwP-ff-Hf9" firstAttribute="top" secondItem="3aV-5C-qFl" secondAttribute="bottom" constant="22" id="6Mt-rB-YWH"/>
+                            <constraint firstItem="3aV-5C-qFl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-47" id="Fgl-bJ-ucU"/>
+                            <constraint firstItem="oG9-cO-fpf" firstAttribute="centerX" secondItem="VSK-Ca-VYq" secondAttribute="centerX" constant="6" id="GUm-n3-cFr"/>
+                            <constraint firstItem="oG9-cO-fpf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="KRN-dL-1fF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3aV-5C-qFl" secondAttribute="bottom" constant="441" id="Mzg-ib-UAq"/>
+                            <constraint firstItem="gwP-ff-Hf9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="W57-vo-krb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="YTi-q3-7zw" secondAttribute="bottom" constant="-85" id="W9t-Jj-pDe"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Yx9-1g-AY8" secondAttribute="bottom" constant="-34" id="XDv-rl-RYr"/>
+                            <constraint firstItem="oG9-cO-fpf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="bIF-lQ-q8L"/>
+                            <constraint firstItem="YTi-q3-7zw" firstAttribute="top" secondItem="gwP-ff-Hf9" secondAttribute="bottom" constant="85" id="fwU-0x-mN3"/>
+                            <constraint firstItem="VSK-Ca-VYq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="hU1-UJ-3Pb"/>
+                            <constraint firstItem="YTi-q3-7zw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="373" id="jvY-2Y-sTk"/>
+                            <constraint firstItem="gwP-ff-Hf9" firstAttribute="centerX" secondItem="oG9-cO-fpf" secondAttribute="centerX" id="ktd-Y4-2jw"/>
+                            <constraint firstItem="Yx9-1g-AY8" firstAttribute="centerX" secondItem="3aV-5C-qFl" secondAttribute="centerX" id="nOx-G1-zzL"/>
+                            <constraint firstItem="VSK-Ca-VYq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="o0I-Bl-8Bd"/>
+                            <constraint firstItem="3aV-5C-qFl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pn7-nK-7gd"/>
+                            <constraint firstItem="oG9-cO-fpf" firstAttribute="centerX" secondItem="DUj-rW-x5T" secondAttribute="centerX" constant="6" id="q3j-Eh-2Ly"/>
+                            <constraint firstItem="Yx9-1g-AY8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="174" id="qWj-6R-WVA"/>
+                            <constraint firstItem="YTi-q3-7zw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sq7-yA-q8p"/>
+                            <constraint firstItem="oG9-cO-fpf" firstAttribute="centerX" secondItem="3aV-5C-qFl" secondAttribute="centerX" constant="6" id="uSw-gf-g6P"/>
+                            <constraint firstItem="Yx9-1g-AY8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x4Y-Fw-hbv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="107"/>
+            <point key="canvasLocation" x="135.38461538461539" y="105.92417061611374"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Continue" width="328" height="200"/>
+        <image name="bg" width="390" height="542"/>
+        <image name="logo" width="74" height="74.666664123535156"/>
+        <image name="spashImage" width="390" height="386"/>
+        <image name="splashSilhouette" width="248.66667175292969" height="214"/>
+        <namedColor name="Main color">
+            <color red="0.11372549019607843" green="0.33333333333333331" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
