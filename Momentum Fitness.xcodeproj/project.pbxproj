@@ -24,6 +24,10 @@
 		379EE9082617A4AA00A9B007 /* GoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE9072617A4AA00A9B007 /* GoalVC.swift */; };
 		379EE90D2617A4D400A9B007 /* FitnessLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE90C2617A4D400A9B007 /* FitnessLevelVC.swift */; };
 		379EE9122617A4F700A9B007 /* GenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE9112617A4F700A9B007 /* GenderVC.swift */; };
+		C9A176FB2617CD2500C72952 /* WorkoutRoutineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */; };
+		C9A177002617D56F00C72952 /* NewWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */; };
+		C9A177052617E39200C72952 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A177042617E39200C72952 /* UserProfileVC.swift */; };
+		C9A1770A2617E9F300C72952 /* GreatJobVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A177092617E9F300C72952 /* GreatJobVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		379EE9072617A4AA00A9B007 /* GoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalVC.swift; sourceTree = "<group>"; };
 		379EE90C2617A4D400A9B007 /* FitnessLevelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessLevelVC.swift; sourceTree = "<group>"; };
 		379EE9112617A4F700A9B007 /* GenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderVC.swift; sourceTree = "<group>"; };
+		C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRoutineVC.swift; sourceTree = "<group>"; };
+		C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutVC.swift; sourceTree = "<group>"; };
+		C9A177042617E39200C72952 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		C9A177092617E9F300C72952 /* GreatJobVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatJobVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,10 @@
 				379EE9072617A4AA00A9B007 /* GoalVC.swift */,
 				379EE90C2617A4D400A9B007 /* FitnessLevelVC.swift */,
 				379EE9112617A4F700A9B007 /* GenderVC.swift */,
+				C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */,
+				C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */,
+				C9A177042617E39200C72952 /* UserProfileVC.swift */,
+				C9A177092617E9F300C72952 /* GreatJobVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -295,14 +307,18 @@
 			files = (
 				379EE90D2617A4D400A9B007 /* FitnessLevelVC.swift in Sources */,
 				375E2AD326177A2800E1CFCA /* AccountNavigationVC.swift in Sources */,
+				C9A1770A2617E9F300C72952 /* GreatJobVC.swift in Sources */,
+				C9A176FB2617CD2500C72952 /* WorkoutRoutineVC.swift in Sources */,
 				379EE9082617A4AA00A9B007 /* GoalVC.swift in Sources */,
 				379EE8FE2617974400A9B007 /* HomeVC.swift in Sources */,
 				375E2AEB2617852100E1CFCA /* SignupVC.swift in Sources */,
 				375E2AA02617497900E1CFCA /* ViewController.swift in Sources */,
 				375E2AE32617819800E1CFCA /* SignInVC.swift in Sources */,
+				C9A177052617E39200C72952 /* UserProfileVC.swift in Sources */,
 				375E2A9C2617497900E1CFCA /* AppDelegate.swift in Sources */,
 				379EE9032617A34D00A9B007 /* WeightHeightVC.swift in Sources */,
 				375E2AA62617497900E1CFCA /* Momentum_Fitness.xcdatamodeld in Sources */,
+				C9A177002617D56F00C72952 /* NewWorkoutVC.swift in Sources */,
 				375E2A9E2617497900E1CFCA /* SceneDelegate.swift in Sources */,
 				379EE9122617A4F700A9B007 /* GenderVC.swift in Sources */,
 			);
