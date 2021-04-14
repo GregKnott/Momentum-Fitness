@@ -274,13 +274,53 @@ Sign into existing</string>
                                     <segue destination="0Nu-6A-9qF" kind="show" id="47J-fK-iw3"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eMG-p6-fzP">
+                                <rect key="frame" x="62" y="228" width="266" height="404"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2P4-6A-W8g" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="134.66666666666666"/>
+                                        <state key="normal" title="Lose weight">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loseWeightRB:" destination="mta-iC-NMW" eventType="touchUpInside" id="ioS-Xc-P8R"/>
+                                            <outletCollection property="otherButtons" destination="DMl-Rn-94O" id="2yp-a7-u7e"/>
+                                            <outletCollection property="otherButtons" destination="1pZ-gc-6nd" id="bUW-yF-mca"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DMl-Rn-94O" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="134.66666666666669" width="266" height="134.66666666666669"/>
+                                        <state key="normal" title="Maintain weight">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="maintainWeightRB:" destination="mta-iC-NMW" eventType="touchUpInside" id="X2W-mO-npl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1pZ-gc-6nd" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="269.33333333333331" width="266" height="134.66666666666669"/>
+                                        <state key="normal" title="Gain weight">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gainWeightRB:" destination="mta-iC-NMW" eventType="touchUpInside" id="HPn-Tw-EzP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="Wph-5M-a4O"/>
+                                    <constraint firstAttribute="width" constant="266" id="x4M-9b-BmW"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3H5-K8-92g"/>
                         <color key="backgroundColor" name="Main color"/>
                         <constraints>
                             <constraint firstItem="lwG-9Y-K3p" firstAttribute="centerX" secondItem="ZSQ-kq-asW" secondAttribute="centerX" id="6Ws-cN-ozq"/>
+                            <constraint firstItem="eMG-p6-fzP" firstAttribute="centerX" secondItem="ZSQ-kq-asW" secondAttribute="centerX" id="JCt-mn-Hw8"/>
                             <constraint firstItem="BEK-x0-UQl" firstAttribute="centerY" secondItem="ZSQ-kq-asW" secondAttribute="centerY" constant="354" id="MaE-Vk-rWf"/>
                             <constraint firstItem="lwG-9Y-K3p" firstAttribute="centerY" secondItem="ZSQ-kq-asW" secondAttribute="centerY" constant="-279.5" id="RUU-sP-cLE"/>
+                            <constraint firstItem="eMG-p6-fzP" firstAttribute="centerY" secondItem="ZSQ-kq-asW" secondAttribute="centerY" constant="8" id="cpx-rx-KcU"/>
                             <constraint firstItem="BEK-x0-UQl" firstAttribute="centerX" secondItem="ZSQ-kq-asW" secondAttribute="centerX" id="tVL-id-PpC"/>
                         </constraints>
                     </view>
@@ -299,7 +339,7 @@ Sign into existing</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl6-qq-lX3">
-                                <rect key="frame" x="130.66666666666666" y="121" width="128.99999999999997" height="43"/>
+                                <rect key="frame" x="130.66666666666669" y="121" width="128.66666666666669" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -311,13 +351,46 @@ Sign into existing</string>
                                     <segue destination="zGy-d9-ae2" kind="show" id="paU-CO-Ff6"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FuG-BN-6TH">
+                                <rect key="frame" x="62" y="228" width="266" height="404"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dKF-sX-Smp" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="134.66666666666666"/>
+                                        <state key="normal" title="Male">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <outletCollection property="otherButtons" destination="TMz-sa-71G" id="Ied-mw-KFJ"/>
+                                            <outletCollection property="otherButtons" destination="RKv-KX-uS9" id="Ej6-zL-jo7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TMz-sa-71G" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="134.66666666666669" width="266" height="134.66666666666669"/>
+                                        <state key="normal" title="Female">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RKv-KX-uS9" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="269.33333333333331" width="266" height="134.66666666666669"/>
+                                        <state key="normal" title="Other">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="3I1-X6-Blg"/>
+                                    <constraint firstAttribute="height" constant="404" id="9Cj-tg-W0j"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SBP-6x-RH9"/>
                         <color key="backgroundColor" name="Main color"/>
                         <constraints>
                             <constraint firstItem="E64-t8-qIK" firstAttribute="centerY" secondItem="btf-81-YxK" secondAttribute="centerY" constant="350" id="9DT-wb-u2j"/>
                             <constraint firstItem="E64-t8-qIK" firstAttribute="centerX" secondItem="btf-81-YxK" secondAttribute="centerX" id="BeQ-aF-bhU"/>
+                            <constraint firstItem="FuG-BN-6TH" firstAttribute="centerY" secondItem="btf-81-YxK" secondAttribute="centerY" constant="8" id="ZhY-Ua-W87"/>
                             <constraint firstItem="Jl6-qq-lX3" firstAttribute="centerX" secondItem="btf-81-YxK" secondAttribute="centerX" id="bQX-48-O2g"/>
+                            <constraint firstItem="FuG-BN-6TH" firstAttribute="centerX" secondItem="btf-81-YxK" secondAttribute="centerX" id="xUi-TM-71I"/>
                             <constraint firstItem="Jl6-qq-lX3" firstAttribute="centerY" secondItem="btf-81-YxK" secondAttribute="centerY" constant="-279.5" id="xjU-Oj-aeI"/>
                         </constraints>
                     </view>
@@ -411,6 +484,43 @@ Sign into existing</string>
                                     <segue destination="cE1-ne-HzC" kind="show" id="SwE-G3-RUh"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8yb-bn-cot">
+                                <rect key="frame" x="62" y="228" width="266" height="404"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9vv-Do-0z4" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="134.66666666666666"/>
+                                        <state key="normal">
+                                            <string key="title">Beginner (Less than a year 
+of training)</string>
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <outletCollection property="otherButtons" destination="LtT-IJ-BJY" id="090-Cg-EDq"/>
+                                            <outletCollection property="otherButtons" destination="mGF-O0-yB0" id="CxE-jT-TvR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LtT-IJ-BJY" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="134.66666666666669" width="266" height="134.66666666666669"/>
+                                        <state key="normal">
+                                            <string key="title">Intermediate (Over a 
+year of training)</string>
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mGF-O0-yB0" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="269.33333333333331" width="266" height="134.66666666666669"/>
+                                        <state key="normal">
+                                            <string key="title">Advanced (Over 2 years 
+of training)</string>
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="2KI-e2-4YQ"/>
+                                    <constraint firstAttribute="height" constant="404" id="2mp-Ae-JMk"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9kz-Ak-wIV"/>
                         <color key="backgroundColor" name="Main color"/>
@@ -418,6 +528,8 @@ Sign into existing</string>
                             <constraint firstItem="9kz-Ak-wIV" firstAttribute="bottom" secondItem="70K-so-ab7" secondAttribute="bottom" constant="616" id="7ta-sU-edD"/>
                             <constraint firstItem="70K-so-ab7" firstAttribute="centerX" secondItem="lPb-RF-DHN" secondAttribute="centerX" id="8tG-xp-EMv"/>
                             <constraint firstItem="70K-so-ab7" firstAttribute="centerX" secondItem="lPb-RF-DHN" secondAttribute="centerX" id="B8Q-d7-KQM"/>
+                            <constraint firstItem="8yb-bn-cot" firstAttribute="centerY" secondItem="lPb-RF-DHN" secondAttribute="centerY" constant="8" id="BpW-z6-m9v"/>
+                            <constraint firstItem="8yb-bn-cot" firstAttribute="centerX" secondItem="lPb-RF-DHN" secondAttribute="centerX" id="O1h-hx-dlm"/>
                             <constraint firstItem="70K-so-ab7" firstAttribute="centerY" secondItem="lPb-RF-DHN" secondAttribute="centerY" constant="-279.5" id="Q6j-nD-qKb"/>
                             <constraint firstItem="Iqk-MD-lAe" firstAttribute="centerX" secondItem="lPb-RF-DHN" secondAttribute="centerX" id="SqG-fT-f9T"/>
                             <constraint firstItem="Iqk-MD-lAe" firstAttribute="centerY" secondItem="lPb-RF-DHN" secondAttribute="centerY" constant="354" id="cWx-uh-Q20"/>
@@ -897,7 +1009,7 @@ Sign into existing</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="6TU-4b-bXS">
-                                <rect key="frame" x="113.66666666666667" y="67.666666666666671" width="162.66666666666663" height="162.66666666666663"/>
+                                <rect key="frame" x="113.66666666666669" y="67.666666666666686" width="163" height="163"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great job!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIs-44-Dd8">
                                 <rect key="frame" x="76.666666666666686" y="302" width="237" height="60"/>
@@ -1162,6 +1274,9 @@ Sign into existing</string>
         <namedColor name="Main color">
             <color red="0.11372549019607843" green="0.33333333333333331" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

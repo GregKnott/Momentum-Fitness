@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import DLRadioButton
 
 class GoalVC: UIViewController {
 
+    //A variable to store the users last selection
+    //This will be put in core storage
+    var goal: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,15 +21,16 @@ class GoalVC: UIViewController {
         styleTopBar(nav: navigationItem)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func loseWeightRB(_ sender: DLRadioButton) {
+        goal = "Lose weight"
     }
-    */
+    
+    @IBAction func maintainWeightRB(_ sender: DLRadioButton) {
+        goal = "Maintain weight"
+    }
+    
+    @IBAction func gainWeightRB(_ sender: DLRadioButton) {
+        goal = "Gain weight"
+    }
 
 }

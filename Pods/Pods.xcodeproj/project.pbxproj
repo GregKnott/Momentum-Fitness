@@ -1,0 +1,1173 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E994D95F0BE213901FA8AB7BFB298C0 /* Pods-Momentum Fitness-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E12BF842677A229441CE74689D0945A /* Pods-Momentum Fitness-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2384FB2BB13331E32026D03EFE425136 /* Pods-Momentum Fitness-Momentum FitnessUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69924325D1C724F98B4C848819EEC7CF /* Pods-Momentum Fitness-Momentum FitnessUITests-dummy.m */; };
+		30528E9F78AD793A9A7CEB6C6A8A054F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		320E018022758AFD782991C7D8854DB1 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4793967041096F713DABD4D3D0F3E6 /* TegKeychainConstants.swift */; };
+		41352FA4AA1380FB40F5B1944A520258 /* Pods-Momentum FitnessTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D023CCDBE7641DF6ACB428CBE244A324 /* Pods-Momentum FitnessTests-dummy.m */; };
+		43DD7057C283F8116FD2D56D7734EB97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		46076EBE819798CF04114E4BA095090B /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DEEC13B3F027D75AA8B8922B6F393A /* DLRadioButton-dummy.m */; };
+		485A776035D4B1EF97E8AE0E95A66502 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDEDBD2A2CECFD98CE34964BACD9EAD /* KeychainSwiftAccessOptions.swift */; };
+		4B255EB0716A1BB473E696C20812C697 /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6090CB63D7DC69BD9F8D2D7701F094 /* KeychainSwift-dummy.m */; };
+		4DC6C132AEF3E02BDD5ABC89333233B3 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D73B9B38F83128E71256149A28C5DF5 /* KeychainSwift.swift */; };
+		6A0957661D31741CCE98B1F3A0B983E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		845A3116C124EF71B5EB51C487027606 /* Pods-Momentum Fitness-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5FF3345430D914EA8BC0C4A5D78C05 /* Pods-Momentum Fitness-dummy.m */; };
+		85C761A49785438F04F327BC28B75D1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9525CEA9E647A9F2F06487AFB4BA5D4E /* Pods-Momentum Fitness-Momentum FitnessUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23C63FCAE6F748D6D6C5660FB3037B0F /* Pods-Momentum Fitness-Momentum FitnessUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9621251F99E5C334E250D62BDFE22C8B /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC5562AB42D8D316ACA81C108F0F9EA /* DLRadioButton.m */; };
+		C26349DDCAA8699E63733DF6F3F08BC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7446AFE77BFB2610D286B1B8296BFF0 /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5219FA0606BFEE8F3BD0FA75BC65151 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = AC709A29107BE4A01606B5845C080B87 /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D938D388CD130973CF16AE6F673FDC8F /* Pods-Momentum FitnessTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4BF608817E85E3136ADF6359D12ED0 /* Pods-Momentum FitnessTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E29E7C160A42C37D9E557396D6450E4D /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E96B317C702C5489C17D67D87FB32CB0 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27B27F4F0AF91A48EF0701F10B37AC41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED8F38B6D4A3AD6DFF85D18F9F09435;
+			remoteInfo = DLRadioButton;
+		};
+		2D5FE9B2282E00D63967AEA323B461E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED8F38B6D4A3AD6DFF85D18F9F09435;
+			remoteInfo = DLRadioButton;
+		};
+		A184076436537935606E183CEA964106 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E54A78BCF82272E99319D7F7F5E8C1;
+			remoteInfo = KeychainSwift;
+		};
+		C4C28CAE0B383A9D84B00ACED4DA9001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E54A78BCF82272E99319D7F7F5E8C1;
+			remoteInfo = KeychainSwift;
+		};
+		CA2AF1EEE26F9CDB9A8231D36B050BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3623DE0350D467A778BABC00B6F90F2;
+			remoteInfo = "Pods-Momentum Fitness";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01AEC225A573D60D1C72A3D2EF88F7A1 /* Pods_Momentum_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Momentum_Fitness.framework; path = "Pods-Momentum Fitness.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		026895866F2CBE0D1739ED3AF6796933 /* Pods_Momentum_FitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Momentum_FitnessTests.framework; path = "Pods-Momentum FitnessTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0309F75C51EE0EAFDCC182EF1ED1FC92 /* Pods-Momentum FitnessTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Momentum FitnessTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E6C62F943C62CE321E009ACF5871F65 /* Pods-Momentum FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Momentum FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D6EAE547C224BD11A155FB781DA5195 /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
+		1E12BF842677A229441CE74689D0945A /* Pods-Momentum Fitness-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Momentum Fitness-umbrella.h"; sourceTree = "<group>"; };
+		1E7C3BA25837FE59294FDBDF93055EC6 /* Pods-Momentum Fitness-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Momentum Fitness-Info.plist"; sourceTree = "<group>"; };
+		23C63FCAE6F748D6D6C5660FB3037B0F /* Pods-Momentum Fitness-Momentum FitnessUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Momentum Fitness-Momentum FitnessUITests-umbrella.h"; sourceTree = "<group>"; };
+		2AD272F06C3A4E1CCADD177EDC2928D8 /* KeychainSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.debug.xcconfig; sourceTree = "<group>"; };
+		2D73B9B38F83128E71256149A28C5DF5 /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
+		2E0AF8AAAC17105A441A55EE6504C004 /* Pods-Momentum Fitness-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Momentum Fitness-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2EE9D617A3F6B2BED99C877DDD8FBDF9 /* Pods-Momentum FitnessTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Momentum FitnessTests.modulemap"; sourceTree = "<group>"; };
+		3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E2DCB4C9B5BBEC6C1768E7F1942DBD /* Pods-Momentum Fitness-Momentum FitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Momentum Fitness-Momentum FitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46461FA13FAC0B1EF763D39E74123900 /* Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DEBD595C64AABD270FE96C58A4A9405 /* Pods-Momentum Fitness.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Momentum Fitness.modulemap"; sourceTree = "<group>"; };
+		4EC5562AB42D8D316ACA81C108F0F9EA /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
+		53E44D1DB52EB602926ED34BA79C0F0E /* DLRadioButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.debug.xcconfig; sourceTree = "<group>"; };
+		57430BADE47958AF44C53FA65735DE76 /* Pods-Momentum Fitness-Momentum FitnessUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Momentum Fitness-Momentum FitnessUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5857F63EB84621D10662FEEA5A1B1E21 /* Pods_Momentum_Fitness_Momentum_FitnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Momentum_Fitness_Momentum_FitnessUITests.framework; path = "Pods-Momentum Fitness-Momentum FitnessUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4BF608817E85E3136ADF6359D12ED0 /* Pods-Momentum FitnessTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Momentum FitnessTests-umbrella.h"; sourceTree = "<group>"; };
+		5F7B8092DC25D470B8917C2CC8112774 /* Pods-Momentum FitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Momentum FitnessTests.release.xcconfig"; sourceTree = "<group>"; };
+		63CE3F6EE2DA92AA1C47ADA8758EC897 /* Pods-Momentum Fitness-Momentum FitnessUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Momentum Fitness-Momentum FitnessUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		69924325D1C724F98B4C848819EEC7CF /* Pods-Momentum Fitness-Momentum FitnessUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Momentum Fitness-Momentum FitnessUITests-dummy.m"; sourceTree = "<group>"; };
+		6A6090CB63D7DC69BD9F8D2D7701F094 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
+		6E5A4833705DA23031F857406D41B6C4 /* DLRadioButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.release.xcconfig; sourceTree = "<group>"; };
+		70DEEC13B3F027D75AA8B8922B6F393A /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8B20781C1648AB329E32AFFC1B4019C4 /* Pods-Momentum Fitness-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Momentum Fitness-frameworks.sh"; sourceTree = "<group>"; };
+		8E4793967041096F713DABD4D3D0F3E6 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainSwift.framework; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46CE9E75A338DD1340D067011B3525D /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
+		A58499C71FE4D09B977CB30BD46F97D3 /* Pods-Momentum Fitness-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Momentum Fitness-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7446AFE77BFB2610D286B1B8296BFF0 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		AC709A29107BE4A01606B5845C080B87 /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
+		B0555B592D9634100A4124BF1AE96A98 /* Pods-Momentum FitnessTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Momentum FitnessTests-Info.plist"; sourceTree = "<group>"; };
+		B2B6D5EF6146C17CB92199E8B999D6B3 /* DLRadioButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DLRadioButton-Info.plist"; sourceTree = "<group>"; };
+		BEE27D418DA2F479FDAEB8C8E2FBC14F /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
+		BFDEDBD2A2CECFD98CE34964BACD9EAD /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		C59755EA81C646EA315655D84C534DAF /* Pods-Momentum Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Momentum Fitness.release.xcconfig"; sourceTree = "<group>"; };
+		CD5FF3345430D914EA8BC0C4A5D78C05 /* Pods-Momentum Fitness-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Momentum Fitness-dummy.m"; sourceTree = "<group>"; };
+		CE4A71E2BF9D994A8F6CE52061606217 /* Pods-Momentum Fitness-Momentum FitnessUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Momentum Fitness-Momentum FitnessUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D023CCDBE7641DF6ACB428CBE244A324 /* Pods-Momentum FitnessTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Momentum FitnessTests-dummy.m"; sourceTree = "<group>"; };
+		E328539F2571AC611BD32EAF3D86C80F /* Pods-Momentum Fitness-Momentum FitnessUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Momentum Fitness-Momentum FitnessUITests-Info.plist"; sourceTree = "<group>"; };
+		E96B317C702C5489C17D67D87FB32CB0 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
+		EC7496189549981D0461ADDF809F4E7A /* Pods-Momentum Fitness-Momentum FitnessUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Momentum Fitness-Momentum FitnessUITests.modulemap"; sourceTree = "<group>"; };
+		EFCB4015D4816CA6FE47AABA88498C55 /* Pods-Momentum Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Momentum Fitness.debug.xcconfig"; sourceTree = "<group>"; };
+		F3D611F6A16AA7E64F5FE7CB0E0B34FF /* Pods-Momentum FitnessTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Momentum FitnessTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F53C1873D13AFBBE35DAAB956E5562A6 /* KeychainSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainSwift-Info.plist"; sourceTree = "<group>"; };
+		FC348C15659285BC0EF8C00012A7AC07 /* KeychainSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.release.xcconfig; sourceTree = "<group>"; };
+		FDD628C6F4FD51990C30C94C1731E503 /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46A6D03F68F0C5D5361A1E72C4D0318B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C761A49785438F04F327BC28B75D1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A2A9F195399A771D5E644536E9F6CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30528E9F78AD793A9A7CEB6C6A8A054F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6330A1F291952A1AF35388FBECAA3DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0957661D31741CCE98B1F3A0B983E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7771CFE0CC0AB12F976D115D508F6894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26349DDCAA8699E63733DF6F3F08BC5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93495F341ECBBD05D905D15AC73BDF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DD7057C283F8116FD2D56D7734EB97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		409CE25ABEDF92DA14B353111B776E3F /* Pods-Momentum Fitness-Momentum FitnessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC7496189549981D0461ADDF809F4E7A /* Pods-Momentum Fitness-Momentum FitnessUITests.modulemap */,
+				CE4A71E2BF9D994A8F6CE52061606217 /* Pods-Momentum Fitness-Momentum FitnessUITests-acknowledgements.markdown */,
+				63CE3F6EE2DA92AA1C47ADA8758EC897 /* Pods-Momentum Fitness-Momentum FitnessUITests-acknowledgements.plist */,
+				69924325D1C724F98B4C848819EEC7CF /* Pods-Momentum Fitness-Momentum FitnessUITests-dummy.m */,
+				57430BADE47958AF44C53FA65735DE76 /* Pods-Momentum Fitness-Momentum FitnessUITests-frameworks.sh */,
+				E328539F2571AC611BD32EAF3D86C80F /* Pods-Momentum Fitness-Momentum FitnessUITests-Info.plist */,
+				23C63FCAE6F748D6D6C5660FB3037B0F /* Pods-Momentum Fitness-Momentum FitnessUITests-umbrella.h */,
+				46461FA13FAC0B1EF763D39E74123900 /* Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig */,
+				40E2DCB4C9B5BBEC6C1768E7F1942DBD /* Pods-Momentum Fitness-Momentum FitnessUITests.release.xcconfig */,
+			);
+			name = "Pods-Momentum Fitness-Momentum FitnessUITests";
+			path = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests";
+			sourceTree = "<group>";
+		};
+		467D14D9FE2F4E11F8DCF37912951548 /* DLRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				AC709A29107BE4A01606B5845C080B87 /* DLRadioButton.h */,
+				4EC5562AB42D8D316ACA81C108F0F9EA /* DLRadioButton.m */,
+				ECBB965ECBE40BDB1603574EEDE89FDD /* Support Files */,
+			);
+			name = DLRadioButton;
+			path = DLRadioButton;
+			sourceTree = "<group>";
+		};
+		4B17460DC594D3B71FACF2BB76091201 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				467D14D9FE2F4E11F8DCF37912951548 /* DLRadioButton */,
+				EBE7629A7858196B31C89970A6B41019 /* KeychainSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		640F95BA071ABCA31C400DA212A156DB /* Pods-Momentum Fitness */ = {
+			isa = PBXGroup;
+			children = (
+				4DEBD595C64AABD270FE96C58A4A9405 /* Pods-Momentum Fitness.modulemap */,
+				2E0AF8AAAC17105A441A55EE6504C004 /* Pods-Momentum Fitness-acknowledgements.markdown */,
+				A58499C71FE4D09B977CB30BD46F97D3 /* Pods-Momentum Fitness-acknowledgements.plist */,
+				CD5FF3345430D914EA8BC0C4A5D78C05 /* Pods-Momentum Fitness-dummy.m */,
+				8B20781C1648AB329E32AFFC1B4019C4 /* Pods-Momentum Fitness-frameworks.sh */,
+				1E7C3BA25837FE59294FDBDF93055EC6 /* Pods-Momentum Fitness-Info.plist */,
+				1E12BF842677A229441CE74689D0945A /* Pods-Momentum Fitness-umbrella.h */,
+				EFCB4015D4816CA6FE47AABA88498C55 /* Pods-Momentum Fitness.debug.xcconfig */,
+				C59755EA81C646EA315655D84C534DAF /* Pods-Momentum Fitness.release.xcconfig */,
+			);
+			name = "Pods-Momentum Fitness";
+			path = "Target Support Files/Pods-Momentum Fitness";
+			sourceTree = "<group>";
+		};
+		76788229E6C71AFD09B78DF267D92EE2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				640F95BA071ABCA31C400DA212A156DB /* Pods-Momentum Fitness */,
+				409CE25ABEDF92DA14B353111B776E3F /* Pods-Momentum Fitness-Momentum FitnessUITests */,
+				C85D2A35588BAAC9906478F7927BA03F /* Pods-Momentum FitnessTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		838AA781827435155FF06CB775866107 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton.framework */,
+				9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */,
+				01AEC225A573D60D1C72A3D2EF88F7A1 /* Pods_Momentum_Fitness.framework */,
+				5857F63EB84621D10662FEEA5A1B1E21 /* Pods_Momentum_Fitness_Momentum_FitnessUITests.framework */,
+				026895866F2CBE0D1739ED3AF6796933 /* Pods_Momentum_FitnessTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C85D2A35588BAAC9906478F7927BA03F /* Pods-Momentum FitnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EE9D617A3F6B2BED99C877DDD8FBDF9 /* Pods-Momentum FitnessTests.modulemap */,
+				0309F75C51EE0EAFDCC182EF1ED1FC92 /* Pods-Momentum FitnessTests-acknowledgements.markdown */,
+				F3D611F6A16AA7E64F5FE7CB0E0B34FF /* Pods-Momentum FitnessTests-acknowledgements.plist */,
+				D023CCDBE7641DF6ACB428CBE244A324 /* Pods-Momentum FitnessTests-dummy.m */,
+				B0555B592D9634100A4124BF1AE96A98 /* Pods-Momentum FitnessTests-Info.plist */,
+				5A4BF608817E85E3136ADF6359D12ED0 /* Pods-Momentum FitnessTests-umbrella.h */,
+				0E6C62F943C62CE321E009ACF5871F65 /* Pods-Momentum FitnessTests.debug.xcconfig */,
+				5F7B8092DC25D470B8917C2CC8112774 /* Pods-Momentum FitnessTests.release.xcconfig */,
+			);
+			name = "Pods-Momentum FitnessTests";
+			path = "Target Support Files/Pods-Momentum FitnessTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4B17460DC594D3B71FACF2BB76091201 /* Pods */,
+				838AA781827435155FF06CB775866107 /* Products */,
+				76788229E6C71AFD09B78DF267D92EE2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB3BEC1658A5970F9D3916C20E0566A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D6EAE547C224BD11A155FB781DA5195 /* KeychainSwift.modulemap */,
+				6A6090CB63D7DC69BD9F8D2D7701F094 /* KeychainSwift-dummy.m */,
+				F53C1873D13AFBBE35DAAB956E5562A6 /* KeychainSwift-Info.plist */,
+				FDD628C6F4FD51990C30C94C1731E503 /* KeychainSwift-prefix.pch */,
+				A7446AFE77BFB2610D286B1B8296BFF0 /* KeychainSwift-umbrella.h */,
+				2AD272F06C3A4E1CCADD177EDC2928D8 /* KeychainSwift.debug.xcconfig */,
+				FC348C15659285BC0EF8C00012A7AC07 /* KeychainSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainSwift";
+			sourceTree = "<group>";
+		};
+		EBE7629A7858196B31C89970A6B41019 /* KeychainSwift */ = {
+			isa = PBXGroup;
+			children = (
+				2D73B9B38F83128E71256149A28C5DF5 /* KeychainSwift.swift */,
+				BFDEDBD2A2CECFD98CE34964BACD9EAD /* KeychainSwiftAccessOptions.swift */,
+				8E4793967041096F713DABD4D3D0F3E6 /* TegKeychainConstants.swift */,
+				EB3BEC1658A5970F9D3916C20E0566A4 /* Support Files */,
+			);
+			name = KeychainSwift;
+			path = KeychainSwift;
+			sourceTree = "<group>";
+		};
+		ECBB965ECBE40BDB1603574EEDE89FDD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A46CE9E75A338DD1340D067011B3525D /* DLRadioButton.modulemap */,
+				70DEEC13B3F027D75AA8B8922B6F393A /* DLRadioButton-dummy.m */,
+				B2B6D5EF6146C17CB92199E8B999D6B3 /* DLRadioButton-Info.plist */,
+				BEE27D418DA2F479FDAEB8C8E2FBC14F /* DLRadioButton-prefix.pch */,
+				E96B317C702C5489C17D67D87FB32CB0 /* DLRadioButton-umbrella.h */,
+				53E44D1DB52EB602926ED34BA79C0F0E /* DLRadioButton.debug.xcconfig */,
+				6E5A4833705DA23031F857406D41B6C4 /* DLRadioButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DLRadioButton";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		042E21698549CC2D939AEF644300EA18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29E7C160A42C37D9E557396D6450E4D /* DLRadioButton-umbrella.h in Headers */,
+				C5219FA0606BFEE8F3BD0FA75BC65151 /* DLRadioButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BD77ADDCAB6FA6CF7529B5308B0918 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B56C8A9A99D781F71156B5B491457FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9525CEA9E647A9F2F06487AFB4BA5D4E /* Pods-Momentum Fitness-Momentum FitnessUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD57C581E0AE39890E4305777CC112A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E994D95F0BE213901FA8AB7BFB298C0 /* Pods-Momentum Fitness-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7BE3CA4B2330690D3D0D896281764C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D938D388CD130973CF16AE6F673FDC8F /* Pods-Momentum FitnessTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B334E2C50C2C0C66D96CADAEE2EA01 /* Build configuration list for PBXNativeTarget "KeychainSwift" */;
+			buildPhases = (
+				97BD77ADDCAB6FA6CF7529B5308B0918 /* Headers */,
+				E3B35C6F6E358284C831471583BD04CD /* Sources */,
+				4A2A9F195399A771D5E644536E9F6CF4 /* Frameworks */,
+				29186A7FC9690C20BDE41949C4FFD3AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainSwift;
+			productName = KeychainSwift;
+			productReference = 9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5762014EBBF28670E99B4A9E28844CA4 /* Pods-Momentum FitnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362BE6C8655667B859C2CD30C3DB3C1C /* Build configuration list for PBXNativeTarget "Pods-Momentum FitnessTests" */;
+			buildPhases = (
+				E7BE3CA4B2330690D3D0D896281764C0 /* Headers */,
+				6624A6352A2D8AFFBA4F2F1AFF5D8A3E /* Sources */,
+				6330A1F291952A1AF35388FBECAA3DF3 /* Frameworks */,
+				0244E3749D4A15B28A98AC2C5EC07637 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA70E8652C0795D42CB50A894CE2C73 /* PBXTargetDependency */,
+			);
+			name = "Pods-Momentum FitnessTests";
+			productName = "Pods-Momentum FitnessTests";
+			productReference = 026895866F2CBE0D1739ED3AF6796933 /* Pods_Momentum_FitnessTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6A329663BEC80471DB8C2CDF94BEF5B /* Pods-Momentum Fitness-Momentum FitnessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3128AB9190BF51CC45A2784784E43D2C /* Build configuration list for PBXNativeTarget "Pods-Momentum Fitness-Momentum FitnessUITests" */;
+			buildPhases = (
+				9B56C8A9A99D781F71156B5B491457FD /* Headers */,
+				F0833312AF87AF15D3816AFBFEAE4922 /* Sources */,
+				7771CFE0CC0AB12F976D115D508F6894 /* Frameworks */,
+				F3C27F56C43A327EB7126AC9ED3FE6CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE86330CB45056FEF20CD92BA8139E12 /* PBXTargetDependency */,
+				589986BDBAA489833D18B609F637B9B0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Momentum Fitness-Momentum FitnessUITests";
+			productName = "Pods-Momentum Fitness-Momentum FitnessUITests";
+			productReference = 5857F63EB84621D10662FEEA5A1B1E21 /* Pods_Momentum_Fitness_Momentum_FitnessUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87AB35F442A65AB7A3F31FE027C26974 /* Build configuration list for PBXNativeTarget "DLRadioButton" */;
+			buildPhases = (
+				042E21698549CC2D939AEF644300EA18 /* Headers */,
+				491106F648A199B7352F838E2B5B107D /* Sources */,
+				93495F341ECBBD05D905D15AC73BDF65 /* Frameworks */,
+				8961E51E48F32A896073C1461708CB0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLRadioButton;
+			productName = DLRadioButton;
+			productReference = 3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3623DE0350D467A778BABC00B6F90F2 /* Pods-Momentum Fitness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5527F58A48D24C688E8C77DA27C30B68 /* Build configuration list for PBXNativeTarget "Pods-Momentum Fitness" */;
+			buildPhases = (
+				CBD57C581E0AE39890E4305777CC112A /* Headers */,
+				2AA7DC2E2039A2FC87908F78682BEF8E /* Sources */,
+				46A6D03F68F0C5D5361A1E72C4D0318B /* Frameworks */,
+				3FD0A7B0987595E9A32A830E16A39BD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58D24387C9052D357F077C9E18419DA2 /* PBXTargetDependency */,
+				64E0085683A74DC65F4FA2EDA2881A91 /* PBXTargetDependency */,
+			);
+			name = "Pods-Momentum Fitness";
+			productName = "Pods-Momentum Fitness";
+			productReference = 01AEC225A573D60D1C72A3D2EF88F7A1 /* Pods_Momentum_Fitness.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 838AA781827435155FF06CB775866107 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */,
+				07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */,
+				C3623DE0350D467A778BABC00B6F90F2 /* Pods-Momentum Fitness */,
+				B6A329663BEC80471DB8C2CDF94BEF5B /* Pods-Momentum Fitness-Momentum FitnessUITests */,
+				5762014EBBF28670E99B4A9E28844CA4 /* Pods-Momentum FitnessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0244E3749D4A15B28A98AC2C5EC07637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29186A7FC9690C20BDE41949C4FFD3AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD0A7B0987595E9A32A830E16A39BD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8961E51E48F32A896073C1461708CB0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C27F56C43A327EB7126AC9ED3FE6CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AA7DC2E2039A2FC87908F78682BEF8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845A3116C124EF71B5EB51C487027606 /* Pods-Momentum Fitness-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491106F648A199B7352F838E2B5B107D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46076EBE819798CF04114E4BA095090B /* DLRadioButton-dummy.m in Sources */,
+				9621251F99E5C334E250D62BDFE22C8B /* DLRadioButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6624A6352A2D8AFFBA4F2F1AFF5D8A3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41352FA4AA1380FB40F5B1944A520258 /* Pods-Momentum FitnessTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B35C6F6E358284C831471583BD04CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B255EB0716A1BB473E696C20812C697 /* KeychainSwift-dummy.m in Sources */,
+				4DC6C132AEF3E02BDD5ABC89333233B3 /* KeychainSwift.swift in Sources */,
+				485A776035D4B1EF97E8AE0E95A66502 /* KeychainSwiftAccessOptions.swift in Sources */,
+				320E018022758AFD782991C7D8854DB1 /* TegKeychainConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0833312AF87AF15D3816AFBFEAE4922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2384FB2BB13331E32026D03EFE425136 /* Pods-Momentum Fitness-Momentum FitnessUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		589986BDBAA489833D18B609F637B9B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainSwift;
+			target = 07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */;
+			targetProxy = C4C28CAE0B383A9D84B00ACED4DA9001 /* PBXContainerItemProxy */;
+		};
+		58D24387C9052D357F077C9E18419DA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DLRadioButton;
+			target = BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */;
+			targetProxy = 27B27F4F0AF91A48EF0701F10B37AC41 /* PBXContainerItemProxy */;
+		};
+		5AA70E8652C0795D42CB50A894CE2C73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Momentum Fitness";
+			target = C3623DE0350D467A778BABC00B6F90F2 /* Pods-Momentum Fitness */;
+			targetProxy = CA2AF1EEE26F9CDB9A8231D36B050BF1 /* PBXContainerItemProxy */;
+		};
+		64E0085683A74DC65F4FA2EDA2881A91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainSwift;
+			target = 07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */;
+			targetProxy = A184076436537935606E183CEA964106 /* PBXContainerItemProxy */;
+		};
+		CE86330CB45056FEF20CD92BA8139E12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DLRadioButton;
+			target = BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */;
+			targetProxy = 2D5FE9B2282E00D63967AEA323B461E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2CDA3E68C1230F071ED4FE0932147C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E2DCB4C9B5BBEC6C1768E7F1942DBD /* Pods-Momentum Fitness-Momentum FitnessUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		49F0FFA3C6FA410660F643C6F4C52662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46461FA13FAC0B1EF763D39E74123900 /* Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56778AB9638E4EE10CBC7EF1681C2AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E44D1DB52EB602926ED34BA79C0F0E /* DLRadioButton.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/DLRadioButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				PRODUCT_MODULE_NAME = DLRadioButton;
+				PRODUCT_NAME = DLRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5868A2150D7DC71C6AD11C2134DAA7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6C62F943C62CE321E009ACF5871F65 /* Pods-Momentum FitnessTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		593E0D9A581ECC7BB34AAD38EBF4854E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC348C15659285BC0EF8C00012A7AC07 /* KeychainSwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/KeychainSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				PRODUCT_MODULE_NAME = KeychainSwift;
+				PRODUCT_NAME = KeychainSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F8EC6FE7069D2FB3C33D0FAF0D3274D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7B8092DC25D470B8917C2CC8112774 /* Pods-Momentum FitnessTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63051A5E9DE504F4E38528B4E55996DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD272F06C3A4E1CCADD177EDC2928D8 /* KeychainSwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/KeychainSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				PRODUCT_MODULE_NAME = KeychainSwift;
+				PRODUCT_NAME = KeychainSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AEFF88FDB387939B46E0336D9F6E581C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E5A4833705DA23031F857406D41B6C4 /* DLRadioButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/DLRadioButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				PRODUCT_MODULE_NAME = DLRadioButton;
+				PRODUCT_NAME = DLRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD83AFD3EC768AFA81D4B0D5106194A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C59755EA81C646EA315655D84C534DAF /* Pods-Momentum Fitness.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Momentum Fitness/Pods-Momentum Fitness-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Momentum Fitness/Pods-Momentum Fitness.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE6707677348755A5DDE4FA2F1D2E7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFCB4015D4816CA6FE47AABA88498C55 /* Pods-Momentum Fitness.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Momentum Fitness/Pods-Momentum Fitness-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Momentum Fitness/Pods-Momentum Fitness.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3128AB9190BF51CC45A2784784E43D2C /* Build configuration list for PBXNativeTarget "Pods-Momentum Fitness-Momentum FitnessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F0FFA3C6FA410660F643C6F4C52662 /* Debug */,
+				2CDA3E68C1230F071ED4FE0932147C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		362BE6C8655667B859C2CD30C3DB3C1C /* Build configuration list for PBXNativeTarget "Pods-Momentum FitnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5868A2150D7DC71C6AD11C2134DAA7A4 /* Debug */,
+				5F8EC6FE7069D2FB3C33D0FAF0D3274D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5527F58A48D24C688E8C77DA27C30B68 /* Build configuration list for PBXNativeTarget "Pods-Momentum Fitness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6707677348755A5DDE4FA2F1D2E7CE /* Debug */,
+				DD83AFD3EC768AFA81D4B0D5106194A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87AB35F442A65AB7A3F31FE027C26974 /* Build configuration list for PBXNativeTarget "DLRadioButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56778AB9638E4EE10CBC7EF1681C2AD8 /* Debug */,
+				AEFF88FDB387939B46E0336D9F6E581C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B334E2C50C2C0C66D96CADAEE2EA01 /* Build configuration list for PBXNativeTarget "KeychainSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63051A5E9DE504F4E38528B4E55996DA /* Debug */,
+				593E0D9A581ECC7BB34AAD38EBF4854E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2503D2A8E522329CEFAB136B /* Pods_Momentum_Fitness_Momentum_FitnessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F72B16C3B9306386C354091 /* Pods_Momentum_Fitness_Momentum_FitnessUITests.framework */; };
 		375E2A9C2617497900E1CFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375E2A9B2617497900E1CFCA /* AppDelegate.swift */; };
 		375E2A9E2617497900E1CFCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375E2A9D2617497900E1CFCA /* SceneDelegate.swift */; };
 		375E2AA02617497900E1CFCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375E2A9F2617497900E1CFCA /* ViewController.swift */; };
@@ -24,6 +25,8 @@
 		379EE9082617A4AA00A9B007 /* GoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE9072617A4AA00A9B007 /* GoalVC.swift */; };
 		379EE90D2617A4D400A9B007 /* FitnessLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE90C2617A4D400A9B007 /* FitnessLevelVC.swift */; };
 		379EE9122617A4F700A9B007 /* GenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE9112617A4F700A9B007 /* GenderVC.swift */; };
+		6FBC691571881DD5D4A1DA19 /* Pods_Momentum_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86AA053863FDE218E2A88A /* Pods_Momentum_Fitness.framework */; };
+		874C1187AA8AAD22978AF40D /* Pods_Momentum_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */; };
 		C9A176FB2617CD2500C72952 /* WorkoutRoutineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */; };
 		C9A177002617D56F00C72952 /* NewWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */; };
 		C9A177052617E39200C72952 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A177042617E39200C72952 /* UserProfileVC.swift */; };
@@ -48,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09AB1CCC6AACAE57F7193DC9 /* Pods-Momentum Fitness-Momentum FitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum Fitness-Momentum FitnessUITests.release.xcconfig"; path = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F72B16C3B9306386C354091 /* Pods_Momentum_Fitness_Momentum_FitnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Momentum_Fitness_Momentum_FitnessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E08BC38D02C5418FEA8BD8 /* Pods-Momentum Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum Fitness.debug.xcconfig"; path = "Target Support Files/Pods-Momentum Fitness/Pods-Momentum Fitness.debug.xcconfig"; sourceTree = "<group>"; };
+		1B7207F3FE04A127FE723B91 /* Pods-Momentum Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum Fitness.release.xcconfig"; path = "Target Support Files/Pods-Momentum Fitness/Pods-Momentum Fitness.release.xcconfig"; sourceTree = "<group>"; };
 		375E2A982617497900E1CFCA /* Momentum Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Momentum Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		375E2A9B2617497900E1CFCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		375E2A9D2617497900E1CFCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,15 +73,21 @@
 		375E2AD226177A2800E1CFCA /* AccountNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNavigationVC.swift; sourceTree = "<group>"; };
 		375E2AE22617819800E1CFCA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		375E2AEA2617852100E1CFCA /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		37782A802627967D00001D93 /* Momentum Fitness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Momentum Fitness.entitlements"; sourceTree = "<group>"; };
 		379EE8FD2617974400A9B007 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		379EE9022617A34D00A9B007 /* WeightHeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightHeightVC.swift; sourceTree = "<group>"; };
 		379EE9072617A4AA00A9B007 /* GoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalVC.swift; sourceTree = "<group>"; };
 		379EE90C2617A4D400A9B007 /* FitnessLevelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessLevelVC.swift; sourceTree = "<group>"; };
 		379EE9112617A4F700A9B007 /* GenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderVC.swift; sourceTree = "<group>"; };
+		60136A434DA4079D4A2229E7 /* Pods-Momentum FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Momentum_FitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA202FE910E771CC186C28EE /* Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; path = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRoutineVC.swift; sourceTree = "<group>"; };
 		C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutVC.swift; sourceTree = "<group>"; };
 		C9A177042617E39200C72952 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		C9A177092617E9F300C72952 /* GreatJobVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatJobVC.swift; sourceTree = "<group>"; };
+		CE86AA053863FDE218E2A88A /* Pods_Momentum_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Momentum_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF19EF58E4F677342688565F /* Pods-Momentum FitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum FitnessTests.release.xcconfig"; path = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FBC691571881DD5D4A1DA19 /* Pods_Momentum_Fitness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874C1187AA8AAD22978AF40D /* Pods_Momentum_FitnessTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2503D2A8E522329CEFAB136B /* Pods_Momentum_Fitness_Momentum_FitnessUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +125,8 @@
 				375E2AB42617497A00E1CFCA /* Momentum FitnessTests */,
 				375E2ABF2617497A00E1CFCA /* Momentum FitnessUITests */,
 				375E2A992617497900E1CFCA /* Products */,
+				71EE39ED699EEA4B5E1B9830 /* Pods */,
+				F8187DBD99010A660A8EFCF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +143,7 @@
 		375E2A9A2617497900E1CFCA /* Momentum Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				37782A802627967D00001D93 /* Momentum Fitness.entitlements */,
 				375E2AD1261779ED00E1CFCA /* Controllers */,
 				375E2A9B2617497900E1CFCA /* AppDelegate.swift */,
 				375E2A9D2617497900E1CFCA /* SceneDelegate.swift */,
@@ -175,6 +194,30 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		71EE39ED699EEA4B5E1B9830 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12E08BC38D02C5418FEA8BD8 /* Pods-Momentum Fitness.debug.xcconfig */,
+				1B7207F3FE04A127FE723B91 /* Pods-Momentum Fitness.release.xcconfig */,
+				AA202FE910E771CC186C28EE /* Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig */,
+				09AB1CCC6AACAE57F7193DC9 /* Pods-Momentum Fitness-Momentum FitnessUITests.release.xcconfig */,
+				60136A434DA4079D4A2229E7 /* Pods-Momentum FitnessTests.debug.xcconfig */,
+				FF19EF58E4F677342688565F /* Pods-Momentum FitnessTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8187DBD99010A660A8EFCF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE86AA053863FDE218E2A88A /* Pods_Momentum_Fitness.framework */,
+				0F72B16C3B9306386C354091 /* Pods_Momentum_Fitness_Momentum_FitnessUITests.framework */,
+				A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 375E2AC52617497A00E1CFCA /* Build configuration list for PBXNativeTarget "Momentum Fitness" */;
 			buildPhases = (
+				75C8A00FBDA1E98CAFA940B9 /* [CP] Check Pods Manifest.lock */,
 				375E2A942617497900E1CFCA /* Sources */,
 				375E2A952617497900E1CFCA /* Frameworks */,
 				375E2A962617497900E1CFCA /* Resources */,
+				6FA7817C5434CDCF250FE631 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 375E2AC82617497A00E1CFCA /* Build configuration list for PBXNativeTarget "Momentum FitnessTests" */;
 			buildPhases = (
+				DCF3B65A9D082CE33255B36A /* [CP] Check Pods Manifest.lock */,
 				375E2AAD2617497A00E1CFCA /* Sources */,
 				375E2AAE2617497A00E1CFCA /* Frameworks */,
 				375E2AAF2617497A00E1CFCA /* Resources */,
@@ -217,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 375E2ACB2617497A00E1CFCA /* Build configuration list for PBXNativeTarget "Momentum FitnessUITests" */;
 			buildPhases = (
+				2F990595C29729002CC584F2 /* [CP] Check Pods Manifest.lock */,
 				375E2AB82617497A00E1CFCA /* Sources */,
 				375E2AB92617497A00E1CFCA /* Frameworks */,
 				375E2ABA2617497A00E1CFCA /* Resources */,
+				19D0A9A04C7015544E35CD2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,6 +347,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19D0A9A04C7015544E35CD2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F990595C29729002CC584F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Momentum Fitness-Momentum FitnessUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FA7817C5434CDCF250FE631 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Momentum Fitness/Pods-Momentum Fitness-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Momentum Fitness/Pods-Momentum Fitness-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Momentum Fitness/Pods-Momentum Fitness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75C8A00FBDA1E98CAFA940B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Momentum Fitness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF3B65A9D082CE33255B36A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Momentum FitnessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		375E2A942617497900E1CFCA /* Sources */ = {
@@ -493,9 +644,11 @@
 		};
 		375E2AC62617497A00E1CFCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E08BC38D02C5418FEA8BD8 /* Pods-Momentum Fitness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Momentum Fitness/Momentum Fitness.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Momentum Fitness/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,9 +664,11 @@
 		};
 		375E2AC72617497A00E1CFCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7207F3FE04A127FE723B91 /* Pods-Momentum Fitness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Momentum Fitness/Momentum Fitness.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Momentum Fitness/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -529,6 +684,7 @@
 		};
 		375E2AC92617497A00E1CFCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60136A434DA4079D4A2229E7 /* Pods-Momentum FitnessTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +706,7 @@
 		};
 		375E2ACA2617497A00E1CFCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF19EF58E4F677342688565F /* Pods-Momentum FitnessTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -571,6 +728,7 @@
 		};
 		375E2ACC2617497A00E1CFCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA202FE910E771CC186C28EE /* Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +748,7 @@
 		};
 		375E2ACD2617497A00E1CFCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09AB1CCC6AACAE57F7193DC9 /* Pods-Momentum Fitness-Momentum FitnessUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

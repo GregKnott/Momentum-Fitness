@@ -1,0 +1,20 @@
+PODS:
+  - DLRadioButton (1.4.12)
+  - KeychainSwift (19.0.0)
+
+DEPENDENCIES:
+  - DLRadioButton
+  - KeychainSwift
+
+SPEC REPOS:
+  trunk:
+    - DLRadioButton
+    - KeychainSwift
+
+SPEC CHECKSUMS:
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+
+PODFILE CHECKSUM: 194b1625b4f900816bbb271774727d116ec921e8
+
+COCOAPODS: 1.10.1

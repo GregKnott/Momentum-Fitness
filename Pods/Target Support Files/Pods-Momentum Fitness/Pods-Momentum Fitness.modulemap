@@ -1,0 +1,6 @@
+framework module Pods_Momentum_Fitness {
+  umbrella header "Pods-Momentum Fitness-umbrella.h"
+
+  export *
+  module * { export * }
+}
