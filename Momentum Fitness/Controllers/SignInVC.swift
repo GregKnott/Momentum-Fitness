@@ -6,13 +6,35 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var errortext: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //Adds the logo to the top center, as well as removing text from back button, needs to be on every VC
        styleTopBar(nav: navigationItem)
+    }
+    
+    @IBAction func signIn(_ sender: Any) {
+        
+        let email = emailText.text
+        let password = passwordText.text
+        
+        let keychain = KeychainSwift()
+            keychain.accessGroup = "VDQS4882Z8.ca.sheridancollege.Momentum-Fitness"
+            if email == keychain.get("email"),
+               password == keychain.get("password") {
+              //do nothing?
+            }
+            else {
+                errortext.text = "Invalid email or password"
+                errortext.isHidden = false
+        }
     }
 }

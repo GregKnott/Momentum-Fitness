@@ -6,8 +6,15 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class SignupVC: UIViewController {
+    
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var confirmPassword: UITextField!
+    @IBOutlet weak var errorText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -15,15 +22,26 @@ class SignupVC: UIViewController {
         styleTopBar(nav: navigationItem)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func signUp(_ sender: Any) {
+        
+        if (confirmPassword.text == passwordText.text){
+            guard let email = self.emailText.text,
+                  let password = self.passwordText.text else { return }
+                
+            let keychain = KeychainSwift()
+            //${AppIdentifierPrefix} is the Prefix (or TeamID) that is taken from the App ID in the Apple Developer Account portal.
+            keychain.accessGroup = "VDQS4882Z8.ca.sheridancollege.Momentum-Fitness"
+            keychain.set(email, forKey: "email")
+            keychain.set(password, forKey: "password")
+        }
+        else if (passwordText.text == nil || emailText.text == nil){
+            errorText.text = "Fields cannot be left blank"
+            errorText.isHidden = false
+        }
+        else{
+            errorText.text = "Passwords do not match"
+            errorText.isHidden = false
+        }
     }
-    */
-
+    
 }
