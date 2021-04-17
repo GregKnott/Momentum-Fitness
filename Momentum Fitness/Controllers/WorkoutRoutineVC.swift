@@ -8,7 +8,17 @@
 import UIKit
 
 class WorkoutRoutineVC: UIViewController {
-
+    
+    var routineDataSource = RoutineDataSource()
+    var tableView : UITableView = WorkoutRoutineTableView()
+    
+    @IBAction func saveRoutine(_ segue: UIStoryboardSegue) {
+        let newWorkoutVC = segue.source as? NewWorkoutVC
+        let workout = newWorkoutVC!.workout
+        
+        routineDataSource.append(newWorkout: workout!, to: tableView)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
