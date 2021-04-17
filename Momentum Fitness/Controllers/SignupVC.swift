@@ -10,6 +10,7 @@ import KeychainSwift
 
 class SignupVC: UIViewController {
     
+    @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
@@ -24,7 +25,7 @@ class SignupVC: UIViewController {
     
     @IBAction func signUp(_ sender: Any) {
         
-        if (passwordText.text == "" || emailText.text == ""){
+        if (passwordText.text == "" || emailText.text == "" || nameText.text == ""){
             errorText.text = "Fields cannot be left blank"
             errorText.isHidden = false
         }
@@ -34,13 +35,16 @@ class SignupVC: UIViewController {
         }
         else{
             guard let email = self.emailText.text,
-                  let password = self.passwordText.text else { return }
+                  let password = self.passwordText.text,
+                  let name = nameText.text
+            else { return }
                 
             let keychain = KeychainSwift()
             //${AppIdentifierPrefix} is the Prefix (or TeamID) that is taken from the App ID in the Apple Developer Account portal.
             keychain.accessGroup = "VDQS4882Z8.ca.sheridancollege.Momentum-Fitness"
             keychain.set(email, forKey: "email")
             keychain.set(password, forKey: "password")
+            keychain.set(name, forKey: "name")
             
             self.performSegue(withIdentifier: "signupSuccess", sender: (Any).self)
         }

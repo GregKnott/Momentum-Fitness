@@ -258,6 +258,7 @@ Sign into existing</string>
                         <outlet property="confirmPassword" destination="tli-eq-LD4" id="oHM-Sa-mtb"/>
                         <outlet property="emailText" destination="qoc-cX-wBE" id="gWE-dx-QYm"/>
                         <outlet property="errorText" destination="Suo-EP-6nX" id="Rly-g6-vhq"/>
+                        <outlet property="nameText" destination="ovx-OV-9h2" id="U6H-aM-KQi"/>
                         <outlet property="passwordText" destination="fbv-7R-Kr3" id="EsC-qy-nh2"/>
                         <segue destination="mta-iC-NMW" kind="show" identifier="signupSuccess" id="YOH-Y0-d2T"/>
                     </connections>
@@ -822,6 +823,10 @@ of training)</string>
                     </view>
                     <navigationItem key="navigationItem" id="PW5-C9-6L7"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="RaN-vz-ORC" id="XKc-Or-W9V"/>
+                        <outlet property="greetingLabel" destination="5NM-ip-Nxc" id="fJU-4F-o0e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQA-1b-yvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
