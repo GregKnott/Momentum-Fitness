@@ -26,15 +26,21 @@ class SignInVC: UIViewController {
         let email = emailText.text
         let password = passwordText.text
         
-        let keychain = KeychainSwift()
-            keychain.accessGroup = "VDQS4882Z8.ca.sheridancollege.Momentum-Fitness"
-            if email == keychain.get("email"),
-               password == keychain.get("password") {
-              //do nothing?
+        if (email == "" || password == ""){
+            errortext.text = "Fields cannot be blank"
+            errortext.isHidden = false
+        }
+        else{
+            let keychain = KeychainSwift()
+                keychain.accessGroup = "VDQS4882Z8.ca.sheridancollege.Momentum-Fitness"
+                if email == keychain.get("email"),
+                   password == keychain.get("password") {
+                    self.performSegue(withIdentifier: "signinSuccess", sender: (Any).self)
+                }
+                else {
+                    errortext.text = "Invalid email or password"
+                    errortext.isHidden = false
             }
-            else {
-                errortext.text = "Invalid email or password"
-                errortext.isHidden = false
         }
     }
 }

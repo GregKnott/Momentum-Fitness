@@ -170,7 +170,6 @@ Sign into existing</string>
                                 <state key="normal" image="Signup"/>
                                 <connections>
                                     <action selector="signUp:" destination="oMb-S7-187" eventType="touchUpInside" id="vwf-Hz-zfk"/>
-                                    <segue destination="mta-iC-NMW" kind="show" id="63M-k7-daQ"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pqk-lZ-vnv">
@@ -260,6 +259,7 @@ Sign into existing</string>
                         <outlet property="emailText" destination="qoc-cX-wBE" id="gWE-dx-QYm"/>
                         <outlet property="errorText" destination="Suo-EP-6nX" id="Rly-g6-vhq"/>
                         <outlet property="passwordText" destination="fbv-7R-Kr3" id="EsC-qy-nh2"/>
+                        <segue destination="mta-iC-NMW" kind="show" identifier="signupSuccess" id="YOH-Y0-d2T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wfK-uz-wrV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -284,6 +284,7 @@ Sign into existing</string>
                                 <rect key="frame" x="31" y="676" width="328" height="200"/>
                                 <state key="normal" image="btnNext"/>
                                 <connections>
+                                    <action selector="nextBtnClicked:" destination="mta-iC-NMW" eventType="touchUpInside" id="87Y-IY-CYe"/>
                                     <segue destination="0Nu-6A-9qF" kind="show" id="47J-fK-iw3"/>
                                 </connections>
                             </button>
@@ -678,7 +679,6 @@ of training)</string>
                                 <state key="normal" image="Signin"/>
                                 <connections>
                                     <action selector="signIn:" destination="UrD-zW-NVJ" eventType="touchUpInside" id="85o-z9-R2h"/>
-                                    <segue destination="Ae0-6F-ml4" kind="show" id="yFI-Ph-fix"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -706,6 +706,7 @@ of training)</string>
                         <outlet property="emailText" destination="NrT-HD-oSA" id="l2n-6y-qgq"/>
                         <outlet property="errortext" destination="Dg2-sP-ipj" id="45y-D8-E28"/>
                         <outlet property="passwordText" destination="Dfo-kh-5Pz" id="QXJ-7g-g7u"/>
+                        <segue destination="Ae0-6F-ml4" kind="show" identifier="signinSuccess" id="vqE-j6-Lp1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybe-SV-L8i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1338,7 +1339,7 @@ of training)</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yFI-Ph-fix"/>
+        <segue reference="vqE-j6-Lp1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Continue" width="328" height="200"/>

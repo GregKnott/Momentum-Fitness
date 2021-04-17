@@ -24,7 +24,15 @@ class SignupVC: UIViewController {
     
     @IBAction func signUp(_ sender: Any) {
         
-        if (confirmPassword.text == passwordText.text){
+        if (passwordText.text == "" || emailText.text == ""){
+            errorText.text = "Fields cannot be left blank"
+            errorText.isHidden = false
+        }
+        else if (confirmPassword.text != passwordText.text){
+            errorText.text = "Passwords do not match"
+            errorText.isHidden = false
+        }
+        else{
             guard let email = self.emailText.text,
                   let password = self.passwordText.text else { return }
                 
@@ -33,14 +41,8 @@ class SignupVC: UIViewController {
             keychain.accessGroup = "VDQS4882Z8.ca.sheridancollege.Momentum-Fitness"
             keychain.set(email, forKey: "email")
             keychain.set(password, forKey: "password")
-        }
-        else if (passwordText.text == nil || emailText.text == nil){
-            errorText.text = "Fields cannot be left blank"
-            errorText.isHidden = false
-        }
-        else{
-            errorText.text = "Passwords do not match"
-            errorText.isHidden = false
+            
+            self.performSegue(withIdentifier: "signupSuccess", sender: (Any).self)
         }
     }
     
