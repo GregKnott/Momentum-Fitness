@@ -31,7 +31,7 @@ class RoutineDataSource: NSObject {
     }
     
     func append(newWorkout: Workout, to tableView: UITableView){
-        activity.append(newWorkout)
+        workout.append(newWorkout)
         tableView.insertRows(at: [IndexPath(row: workout.count-1, section: 0)], with: .automatic)
     }
     

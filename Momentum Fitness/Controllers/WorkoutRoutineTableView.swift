@@ -8,6 +8,8 @@
 import UIKit
 
 class WorkoutRoutineTableView: UITableView {
+    
+    var routineDataSource = RoutineDataSource()
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -21,11 +23,11 @@ class WorkoutRoutineTableView: UITableView {
         
         let cell = dequeueReusableCell(withIdentifier: "WorkoutCell", for: indexPath) as! WorkoutTableViewCell
         
-        cell.activity = workoutDataSource.activity(at: indexPath)
+        cell.workout = routineDataSource.workout(at: indexPath)
         return cell
     }
     
     
     override func numberOfRows(inSection section: Int) -> Int {
-        return workoutDataSource.numberOfActivity()
+        return routineDataSource.numberOfWorkout()
     }}

@@ -6,8 +6,13 @@
 //
 
 import UIKit
+import CoreData
+import DLRadioButton
 
 class FitnessLevelVC: UIViewController {
+    
+    var profileData: [NSManagedObject] = []
+    var fitnessLevel: String = "Beginner"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +21,43 @@ class FitnessLevelVC: UIViewController {
         styleTopBar(nav: navigationItem)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func beginnerRB(_ sender: Any) {
+        fitnessLevel = "Beginner"
     }
-    */
-
+    
+    @IBAction func intermediateRB(_ sender: Any) {
+        fitnessLevel = "Intermediate"
+    }
+    
+    @IBAction func advancedRB(_ sender: Any) {
+        fitnessLevel = "Advanced"
+    }
+    
+    @IBAction func nextBtnClicked(_ sender: Any) {
+        //need a reference to app delegate
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                    return
+                }
+                
+                //get the container from app delegate
+                let managedContext = appDelegate.persistentContainer.viewContext
+                
+                //fetch person object from container
+                let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
+                
+                do {
+                    profileData = try managedContext.fetch(fetchRequest)
+                    //perform a search inside container to retrieve this object
+                    if profileData.count > 0 {
+                        //get first entry
+                        let fetchedData: Profile = profileData[0] as! Profile
+                        //store in variable
+                        
+                        fetchedData.setValue(fitnessLevel, forKey: "fitnessLevel");
+                    }
+                    
+                } catch let error as NSError{
+                    print("Could not fetch. \(error), \(error.userInfo)")
+                }
+    }
 }

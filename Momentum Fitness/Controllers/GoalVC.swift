@@ -51,12 +51,19 @@ class GoalVC: UIViewController {
                 do {
                     profileData = try managedContext.fetch(fetchRequest)
                     //perform a search inside container to retrieve this object
+                    //check if there are any records
                     if profileData.count > 0 {
                         //get first entry
                         let fetchedData: Profile = profileData[0] as! Profile
                         //store in variable
-                        
+                        //overwrite existing value
                         fetchedData.setValue(goal, forKey: "goal");
+                    } else{
+                        //create new entry
+                                
+                        let profileData = Profile(context: managedContext)
+
+                        profileData.setValue(goal, forKey: "goal")
                     }
                     
                 } catch let error as NSError{

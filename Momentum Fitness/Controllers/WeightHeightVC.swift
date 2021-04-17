@@ -6,8 +6,16 @@
 //
 
 import UIKit
+import CoreData
+import DLRadioButton
 
 class WeightHeightVC: UIViewController {
+    
+    @IBOutlet weak var weightTF: UITextField!
+    @IBOutlet weak var heightTF: UITextField!
+    var profileData: [NSManagedObject] = []
+    var weight = 0.0
+    var height = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +24,38 @@ class WeightHeightVC: UIViewController {
         styleTopBar(nav: navigationItem)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func getStartedClicked(_ sender: Any) {
+        
+        weight = Double(weightTF.text!) ?? 0
+        height = Int(heightTF.text!) ?? 0
+        
+        //need a reference to app delegate
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                    return
+                }
+                
+                //get the container from app delegate
+                let managedContext = appDelegate.persistentContainer.viewContext
+                
+                //fetch person object from container
+                let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
+                
+                do {
+                    profileData = try managedContext.fetch(fetchRequest)
+                    //perform a search inside container to retrieve this object
+                    if profileData.count > 0 {
+                        //get first entry
+                        let fetchedData: Profile = profileData[0] as! Profile
+                        //store in variable
+                        
+                        fetchedData.setValue(height, forKey: "height");
+                        fetchedData.setValue(weight, forKey: "weight");
+                        
+                        print("Goal \(fetchedData.goal) \nFitness level \(fetchedData.fitnessLevel) \nGender: \(fetchedData.gender) \nHeight \(height) \nWeight: \(weight)")
+                    }
+                    
+                } catch let error as NSError{
+                    print("Could not fetch. \(error), \(error.userInfo)")
+                }
     }
-    */
-
 }
