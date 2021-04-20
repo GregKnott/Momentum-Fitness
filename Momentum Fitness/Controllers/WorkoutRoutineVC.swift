@@ -49,12 +49,13 @@ class WorkoutRoutineVC: UIViewController, UITableViewDataSource, UITableViewDele
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let workoutDetails: Workout = routineDataSource.workout(at: tableView.indexPathForSelectedRow!)
         
-        var routineDetails =  segue.destination as! RoutineDetails
-        
-        routineDetails.selectedWorkout = workoutDetails
+        if (segue.identifier == "routineDetails"){
+            let workoutDetails: Workout = routineDataSource.workout(at: tableView.indexPathForSelectedRow!)
+            
+            var routineDetails =  segue.destination as! RoutineDetails
+            
+            routineDetails.selectedWorkout = workoutDetails
+        }
     }
-    
-
 }
