@@ -932,8 +932,8 @@ of training)</string>
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Workout Routine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5Q-a0-0Rm">
-                                <rect key="frame" x="54" y="122.66666666666669" width="282.33333333333331" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Workout Routines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5Q-a0-0Rm">
+                                <rect key="frame" x="46" y="122.66666666666669" width="298.33333333333331" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -947,19 +947,23 @@ of training)</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pg4-2F-86m" customClass="WorkoutRoutineTableView" customModule="Momentum_Fitness" customModuleProvider="target">
-                                <rect key="frame" x="75" y="263" width="240" height="128"/>
+                                <rect key="frame" x="30" y="263" width="330" height="274"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="nMU-Hd-m52"/>
+                                    <constraint firstAttribute="height" constant="274" id="Lsf-Eg-0xq"/>
+                                    <constraint firstAttribute="width" constant="330" id="Z57-jk-o9C"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkoutCell" id="OYg-mR-NYA" customClass="WorkoutTableViewCell" customModule="Momentum_Fitness" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="28" width="330" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OYg-mR-NYA" id="dbP-ea-s4u">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="330" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BLE-I0-OOP" kind="show" identifier="routineDetails" id="c0d-ve-OIe"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -967,16 +971,18 @@ of training)</string>
                         <viewLayoutGuide key="safeArea" id="Ijy-Yz-jCg"/>
                         <color key="backgroundColor" name="Main color"/>
                         <constraints>
-                            <constraint firstItem="pg4-2F-86m" firstAttribute="leading" secondItem="Ijy-Yz-jCg" secondAttribute="leading" constant="75" id="1Ph-r7-dsZ"/>
                             <constraint firstItem="n5Q-a0-0Rm" firstAttribute="centerX" secondItem="Pfg-Qc-daN" secondAttribute="centerX" id="3vm-Cb-rZK"/>
                             <constraint firstItem="Y7M-fj-s9o" firstAttribute="centerY" secondItem="Pfg-Qc-daN" secondAttribute="centerY" constant="-319" id="AH3-0y-qze"/>
-                            <constraint firstItem="pg4-2F-86m" firstAttribute="centerX" secondItem="n5Q-a0-0Rm" secondAttribute="centerX" id="djV-NC-kP1"/>
-                            <constraint firstItem="Ijy-Yz-jCg" firstAttribute="bottom" secondItem="pg4-2F-86m" secondAttribute="bottom" constant="419" id="iwu-lq-Um7"/>
+                            <constraint firstItem="pg4-2F-86m" firstAttribute="centerX" secondItem="Pfg-Qc-daN" secondAttribute="centerX" id="DDg-MI-jMb"/>
+                            <constraint firstItem="pg4-2F-86m" firstAttribute="centerY" secondItem="Pfg-Qc-daN" secondAttribute="centerY" constant="-22" id="aV5-pE-nlq"/>
                             <constraint firstItem="n5Q-a0-0Rm" firstAttribute="centerY" secondItem="Pfg-Qc-daN" secondAttribute="centerY" constant="-281.5" id="jAM-cX-Pis"/>
                             <constraint firstItem="Y7M-fj-s9o" firstAttribute="centerX" secondItem="Pfg-Qc-daN" secondAttribute="centerX" constant="150" id="nil-Yk-WUV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AZl-BF-QI8"/>
+                    <connections>
+                        <outlet property="tableView" destination="pg4-2F-86m" id="z5U-AQ-NFb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pn-SB-lE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -990,16 +996,6 @@ of training)</string>
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="6TU-4b-bXS">
-                                <rect key="frame" x="113.66666666666669" y="67.666666666666686" width="163" height="163"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great job!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIs-44-Dd8">
-                                <rect key="frame" x="76.666666666666686" y="302" width="237" height="60"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIs-7Y-yYn">
                                 <rect key="frame" x="-14.666666666666657" y="623" width="419.33333333333326" height="200"/>
                                 <state key="normal" image="btnHome"/>
@@ -1007,15 +1003,25 @@ of training)</string>
                                     <segue destination="Ae0-6F-ml4" kind="showDetail" id="eIW-nO-pQb"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="6TU-4b-bXS">
+                                <rect key="frame" x="113.66666666666669" y="162" width="163" height="163"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great job!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIs-44-Dd8">
+                                <rect key="frame" x="76.666666666666686" y="396" width="237" height="60"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gtj-lO-OpY"/>
                         <color key="backgroundColor" name="Main color"/>
                         <constraints>
-                            <constraint firstItem="6TU-4b-bXS" firstAttribute="centerX" secondItem="RQM-v7-Aqv" secondAttribute="centerX" id="5Ja-jP-fup"/>
-                            <constraint firstItem="6TU-4b-bXS" firstAttribute="centerY" secondItem="RQM-v7-Aqv" secondAttribute="centerY" constant="-246" id="B58-Rz-zPL"/>
-                            <constraint firstItem="hIs-44-Dd8" firstAttribute="centerY" secondItem="RQM-v7-Aqv" secondAttribute="centerY" constant="-63" id="HKf-xj-Ao2"/>
-                            <constraint firstItem="hIs-44-Dd8" firstAttribute="centerX" secondItem="RQM-v7-Aqv" secondAttribute="centerX" id="aT9-Vf-qDC"/>
+                            <constraint firstItem="hIs-44-Dd8" firstAttribute="centerY" secondItem="RQM-v7-Aqv" secondAttribute="centerY" constant="31" id="PqR-Ar-eGe"/>
+                            <constraint firstItem="6TU-4b-bXS" firstAttribute="centerX" secondItem="RQM-v7-Aqv" secondAttribute="centerX" id="a1A-Hd-JA9"/>
                             <constraint firstItem="uIs-7Y-yYn" firstAttribute="centerY" secondItem="RQM-v7-Aqv" secondAttribute="centerY" constant="328" id="esK-uL-dfh"/>
+                            <constraint firstItem="hIs-44-Dd8" firstAttribute="centerX" secondItem="RQM-v7-Aqv" secondAttribute="centerX" id="gcl-jt-hcf"/>
+                            <constraint firstItem="6TU-4b-bXS" firstAttribute="centerY" secondItem="RQM-v7-Aqv" secondAttribute="centerY" constant="-151.5" id="t30-zm-2yh"/>
                             <constraint firstItem="uIs-7Y-yYn" firstAttribute="centerX" secondItem="RQM-v7-Aqv" secondAttribute="centerX" id="xtE-2d-SjQ"/>
                         </constraints>
                     </view>
@@ -1025,29 +1031,36 @@ of training)</string>
             </objects>
             <point key="canvasLocation" x="6225" y="791"/>
         </scene>
-        <!--View Controller-->
+        <!--Routine Details-->
         <scene sceneID="K3E-3L-yH3">
             <objects>
-                <viewController id="BLE-I0-OOP" sceneMemberID="viewController">
+                <viewController interfaceStyle="light" id="BLE-I0-OOP" customClass="RoutineDetails" customModule="Momentum_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="03o-0G-swe">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Workout Routine]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPJ-1m-uqy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Workout Routine]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPJ-1m-uqy">
                                 <rect key="frame" x="66.666666666666686" y="117" width="257" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="nAy-Sw-tIn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vf0-O5-UMI">
-                                <rect key="frame" x="75" y="222" width="240" height="128"/>
+                                <rect key="frame" x="35.666666666666657" y="222" width="319" height="177"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="5zB-hI-SeD"/>
+                                    <constraint firstAttribute="width" constant="319" id="Phd-8f-uGE"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="m5g-MJ-VS9">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="28" width="319" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m5g-MJ-VS9" id="eAN-WH-NoM">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="319" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1064,20 +1077,22 @@ of training)</string>
                         <viewLayoutGuide key="safeArea" id="Vhi-9h-TF7"/>
                         <color key="backgroundColor" name="Main color"/>
                         <constraints>
-                            <constraint firstItem="cPJ-1m-uqy" firstAttribute="centerX" secondItem="03o-0G-swe" secondAttribute="centerX" id="6CR-a1-B4b"/>
-                            <constraint firstItem="Vf0-O5-UMI" firstAttribute="top" secondItem="cPJ-1m-uqy" secondAttribute="bottom" constant="69" id="F0O-Ey-qOA"/>
-                            <constraint firstItem="Vhi-9h-TF7" firstAttribute="bottom" secondItem="Vf0-O5-UMI" secondAttribute="bottom" constant="460" id="Fwl-g6-wiv"/>
+                            <constraint firstItem="cPJ-1m-uqy" firstAttribute="centerX" secondItem="03o-0G-swe" secondAttribute="centerX" id="IhJ-em-yzh"/>
                             <constraint firstItem="1og-3j-vTl" firstAttribute="centerX" secondItem="03o-0G-swe" secondAttribute="centerX" id="ObP-Dg-Lsl"/>
-                            <constraint firstItem="Vf0-O5-UMI" firstAttribute="leading" secondItem="Vhi-9h-TF7" secondAttribute="leading" constant="75" id="Xb5-0t-Sa2"/>
                             <constraint firstItem="1og-3j-vTl" firstAttribute="centerY" secondItem="03o-0G-swe" secondAttribute="centerY" constant="338" id="YQa-eW-oMP"/>
-                            <constraint firstItem="Vf0-O5-UMI" firstAttribute="centerX" secondItem="cPJ-1m-uqy" secondAttribute="centerX" id="rOY-cF-nm2"/>
-                            <constraint firstItem="cPJ-1m-uqy" firstAttribute="centerY" secondItem="03o-0G-swe" secondAttribute="centerY" constant="-287" id="wnX-Tg-NlT"/>
+                            <constraint firstItem="cPJ-1m-uqy" firstAttribute="centerY" secondItem="03o-0G-swe" secondAttribute="centerY" constant="-287" id="hEU-GL-M8R"/>
+                            <constraint firstItem="Vf0-O5-UMI" firstAttribute="centerY" secondItem="03o-0G-swe" secondAttribute="centerY" constant="-111.5" id="hIa-w7-xdc"/>
+                            <constraint firstItem="Vf0-O5-UMI" firstAttribute="centerX" secondItem="03o-0G-swe" secondAttribute="centerX" id="jDN-b1-Wdf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="UcV-pa-0oK"/>
+                    <connections>
+                        <outlet property="workoutName" destination="cPJ-1m-uqy" id="utd-XC-Mrw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2S-9h-Kf1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5300" y="791"/>
+            <point key="canvasLocation" x="5300" y="790.52132701421795"/>
         </scene>
         <!--New WorkoutVC-->
         <scene sceneID="9sT-X8-xcw">
@@ -1099,8 +1114,9 @@ of training)</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rEY-m8-4t4" customClass="NewWorkoutTableView" customModule="Momentum_Fitness" customModuleProvider="target">
-                                <rect key="frame" x="75" y="275" width="240" height="79"/>
+                                <rect key="frame" x="75" y="275" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityCell" id="DA5-5Y-SuW" customClass="ActivityTableViewCell" customModule="Momentum_Fitness" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="240" height="43.666667938232422"/>
@@ -1109,6 +1125,7 @@ of training)</string>
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1148,8 +1165,9 @@ of training)</string>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="5LH-6c-goY"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="tableView" destination="rEY-m8-4t4" id="PvH-a0-85z"/>
                         <outlet property="workoutNameTextField" destination="pfa-QD-8yv" id="l1g-QL-xbK"/>
                     </connections>
                 </viewController>
@@ -1317,7 +1335,8 @@ of training)</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cba-By-UbU"/>
+        <segue reference="0o6-a8-xVr"/>
+        <segue reference="eIW-nO-pQb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Continue" width="328" height="200"/>

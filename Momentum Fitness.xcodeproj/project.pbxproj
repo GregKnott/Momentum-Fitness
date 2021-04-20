@@ -25,6 +25,7 @@
 		379EE9082617A4AA00A9B007 /* GoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE9072617A4AA00A9B007 /* GoalVC.swift */; };
 		379EE90D2617A4D400A9B007 /* FitnessLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE90C2617A4D400A9B007 /* FitnessLevelVC.swift */; };
 		379EE9122617A4F700A9B007 /* GenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE9112617A4F700A9B007 /* GenderVC.swift */; };
+		37F46F9E262F3201003526E1 /* RoutineDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F46F9D262F3201003526E1 /* RoutineDetails.swift */; };
 		6FBC691571881DD5D4A1DA19 /* Pods_Momentum_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86AA053863FDE218E2A88A /* Pods_Momentum_Fitness.framework */; };
 		874C1187AA8AAD22978AF40D /* Pods_Momentum_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */; };
 		C9A176FB2617CD2500C72952 /* WorkoutRoutineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */; };
@@ -88,6 +89,7 @@
 		379EE9072617A4AA00A9B007 /* GoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalVC.swift; sourceTree = "<group>"; };
 		379EE90C2617A4D400A9B007 /* FitnessLevelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessLevelVC.swift; sourceTree = "<group>"; };
 		379EE9112617A4F700A9B007 /* GenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderVC.swift; sourceTree = "<group>"; };
+		37F46F9D262F3201003526E1 /* RoutineDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetails.swift; sourceTree = "<group>"; };
 		60136A434DA4079D4A2229E7 /* Pods-Momentum FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Momentum_FitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA202FE910E771CC186C28EE /* Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; path = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				C9A177092617E9F300C72952 /* GreatJobVC.swift */,
 				C9DA6CCA2629F89500524BA8 /* NewWorkoutTableView.swift */,
 				C9DA6CD2262A199600524BA8 /* ActivityTableVC.swift */,
+				37F46F9D262F3201003526E1 /* RoutineDetails.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DA6CA32629E34700524BA8 /* Activity.swift in Sources */,
+				37F46F9E262F3201003526E1 /* RoutineDetails.swift in Sources */,
 				379EE90D2617A4D400A9B007 /* FitnessLevelVC.swift in Sources */,
 				375E2AD326177A2800E1CFCA /* AccountNavigationVC.swift in Sources */,
 				C9A1770A2617E9F300C72952 /* GreatJobVC.swift in Sources */,

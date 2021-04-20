@@ -30,33 +30,31 @@ class UserProfileVC: UIViewController {
         nameLabel.text = keychain.get("name")
         
         //need a reference to app delegate
-                        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                            return
-                        }
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
                         
-                        //get the container from app delegate
-                        let managedContext = appDelegate.persistentContainer.viewContext
+        //get the container from app delegate
+        let managedContext = appDelegate.persistentContainer.viewContext
                         
-                        //fetch person object from container
-                        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
+        //fetch person object from container
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
                         
-                        do {
-                            profileData = try managedContext.fetch(fetchRequest)
-                            //perform a search inside container to retrieve this object
-                            if profileData.count > 0 {
-                                //get first entry
-                                let fetchedData: Profile = profileData[0] as! Profile
-                                //store in variable
+        do {
+            profileData = try managedContext.fetch(fetchRequest)
+            //perform a search inside container to retrieve this object
+            if profileData.count > 0 {
+                //get first entry
+                let fetchedData: Profile = profileData[0] as! Profile
+                //store in variable
                                 
-                                detailsTV.text = "Goal: \(fetchedData.goal ?? "") \nFitness level: \(fetchedData.fitnessLevel ?? "") \nGender: \(fetchedData.gender ?? "") \nHeight \(fetchedData.height) \nWeight: \(fetchedData.weight ?? 0)"
-                            }
+                detailsTV.text = "Goal: \(fetchedData.goal ?? "") \nFitness level: \(fetchedData.fitnessLevel ?? "") \nGender: \(fetchedData.gender ?? "") \nHeight \(fetchedData.height) \nWeight: \(fetchedData.weight ?? 0)"
+            }
                             
-                        } catch let error as NSError{
-                            print("Could not fetch. \(error), \(error.userInfo)")
-                        }
+        } catch let error as NSError{
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
     }
-    
-
     /*
     // MARK: - Navigation
 

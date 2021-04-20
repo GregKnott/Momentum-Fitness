@@ -9,4 +9,6 @@ import Foundation
 
 struct Workout{
     var name: String
+    
+    //var activities: [Activity]
 }

@@ -7,12 +7,25 @@
 
 import UIKit
 
-class NewWorkoutVC: UIViewController {
+class NewWorkoutVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var workout: Workout?
     
     var workoutDataSource = NewWorkoutDataSource()
-    var tableView: UITableView = NewWorkoutTableView()
+    var workout: Workout?
+    @IBOutlet weak var tableView: NewWorkoutTableView!
+    var activities: [Activity] = []
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return workoutDataSource.numberOfActivity()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityCell", for: indexPath) as! ActivityTableViewCell
+        
+        cell.activity = workoutDataSource.activity(at: indexPath)
+        return cell
+    }
+    
     @IBOutlet weak var workoutNameTextField: UITextField!
     
     @IBAction func cancelToNewWorkoutVC(_ segue: UIStoryboardSegue){
@@ -29,7 +42,7 @@ class NewWorkoutVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AddWorkoutToRoutine",
            let workoutName = workoutNameTextField.text{
-           let workout = Workout(name: workoutName)
+            workout = Workout(name: workoutName)
         }
     }
     
@@ -38,19 +51,8 @@ class NewWorkoutVC: UIViewController {
         
         //Adds the logo to the top center, as well as removing text from back button, needs to be on every VC
         styleTopBar(nav: navigationItem)
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.dataSource = self //set the datasource
     }
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

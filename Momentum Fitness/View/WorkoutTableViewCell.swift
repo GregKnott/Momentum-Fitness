@@ -21,6 +21,9 @@ class WorkoutTableViewCell: UITableViewCell {
             nameLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 1.0).isActive = true
             nameLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 0.5)
             
+            nameLabel.font = UIFont.systemFont(ofSize: 25)
+            nameLabel.lineBreakMode = .byWordWrapping
+            nameLabel.numberOfLines = 3
             nameLabel.text = workout.name
             
         }
