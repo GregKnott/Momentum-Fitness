@@ -26,7 +26,7 @@ class WorkoutRoutineVC: UIViewController, UITableViewDataSource, UITableViewDele
     
     @IBAction func saveRoutine(_ segue: UIStoryboardSegue) {
         let newWorkoutVC = segue.source as? NewWorkoutVC
-        let workout = newWorkoutVC!.workout
+        let workout = newWorkoutVC!.workoutObject
         
         routineDataSource.append(newWorkout: workout!, to: tableView)
     }
@@ -51,7 +51,7 @@ class WorkoutRoutineVC: UIViewController, UITableViewDataSource, UITableViewDele
         // Pass the selected object to the new view controller.
         
         if (segue.identifier == "routineDetails"){
-            let workoutDetails: Workout = routineDataSource.workout(at: tableView.indexPathForSelectedRow!)
+            let workoutDetails: WorkoutObject = routineDataSource.workout(at: tableView.indexPathForSelectedRow!)
             
             var routineDetails =  segue.destination as! RoutineDetails
             

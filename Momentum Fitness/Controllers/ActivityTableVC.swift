@@ -10,16 +10,14 @@ import CoreData
 
 class ActivityTableVC: UITableViewController {
     
-    var activity: Activity?
+    var activity: ActivityObject?
     
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var repsTextField: UITextField!
     @IBOutlet var weightTextField: UITextField!
 
     override func viewDidLoad() {
-        super.viewDidLoad(){
-            
-        }
+        super.viewDidLoad()
     }
     
     /*
@@ -34,7 +32,7 @@ class ActivityTableVC: UITableViewController {
            let activityName = nameTextField.text,
            let activityReps = repsTextField.text,
            let activityWeight = weightTextField.text {
-            activity = Activity(name: activityName, reps: activityReps, weight: activityWeight)
+            activity = ActivityObject(name: activityName, reps: activityReps, weight: activityWeight)
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
             else {
                 return
@@ -44,13 +42,13 @@ class ActivityTableVC: UITableViewController {
             let entity = NSEntityDescription.entity(forEntityName: "Activity", in: managedContext)!
             let activity = NSManagedObject(entity: entity, insertInto: managedContext)
             
-            activity.setValue(activityName, "name")
-            activity.setValue(activityReps, "reps")
-            activity.setValue(activityWeight, "weight")
+            activity.setValue(activityName, forKey: "name")
+            activity.setValue(activityReps, forKey: "reps")
+            activity.setValue(activityWeight, forKey: "weight")
 
             do{
                 try managedContext.save()
-                users.append(user)
+                
             } catch let error as NSError {
                 print("Could not save. \(error), \(error.userInfo)")
             }

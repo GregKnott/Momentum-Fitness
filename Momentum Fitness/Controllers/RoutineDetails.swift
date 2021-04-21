@@ -9,18 +9,18 @@ import UIKit
 
 class RoutineDetails: UIViewController {
     
-    var selectedWorkout: Workout?
+    var selectedWorkout: WorkoutObject?
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var workoutName: UILabel!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return selectedWorkout.activities.count
+        return selectedWorkout?.activities.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityCell", for: indexPath) as! ActivityTableViewCell
-        cell.activity = selectedWorkout.activities(at: indexPath)
+        cell.activity = selectedWorkout?.activities[indexPath.item]
         return cell
     }
 

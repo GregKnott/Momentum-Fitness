@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Activity{
+struct ActivityObject{
     var name: String
     var reps: String
     var weight: String

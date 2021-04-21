@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Workout{
+struct WorkoutObject{
     var name: String
-    var activities: [Activity]
+    var activities: [ActivityObject]
 }

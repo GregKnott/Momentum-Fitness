@@ -13,7 +13,7 @@ class ActivityTableViewCell: UITableViewCell {
         var repsLabel = UILabel()
         var weightLabel = UILabel()
         
-        var activity: Activity? {
+        var activity: ActivityObject? {
             didSet {
                 guard let activity = activity else {return}
                 self.addSubview(nameLabel)

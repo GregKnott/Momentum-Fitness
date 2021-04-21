@@ -11,7 +11,7 @@ class WorkoutTableViewCell: UITableViewCell {
     
     var nameLabel = UILabel()
     
-    var workout: Workout? {
+    var workout: WorkoutObject? {
         didSet {
             guard let workout = workout else {return}
             self.addSubview(nameLabel)
