@@ -53,10 +53,22 @@ class NewWorkoutVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             let entity = NSEntityDescription.entity(forEntityName: "Workout", in: managedContext)!
             let workout = NSManagedObject(entity: entity, insertInto: managedContext)
             workout.setValue(workoutName, forKey: "name")
-//            workout.setValue(activities, forKey: "actvities")
+            
+            for activity in activities{
+                var nsActivity = NSManagedObject(entity: NSEntityDescription.entity(forEntityName: "Activity", in: managedContext)!, insertInto: managedContext)
+                
+                nsActivity.setValue(activity.name, forKey: "name")
+                nsActivity.setValue(activity.reps, forKey: "reps")
+                nsActivity.setValue(activity.weight, forKey: "weight")
+                workout.setValue(NSSet(object: nsActivity), forKey: "activities")
+                print(activity)
+                print(nsActivity)
+            }
+            
             
             do{
                 try managedContext.save()
+                try workout.managedObjectContext?.save()
                 
             } catch let error as NSError {
                 print("Could not save. \(error), \(error.userInfo)")

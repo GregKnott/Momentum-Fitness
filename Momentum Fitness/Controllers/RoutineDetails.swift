@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RoutineDetails: UIViewController {
+class RoutineDetails: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var selectedWorkout: WorkoutObject?
 
@@ -20,7 +20,8 @@ class RoutineDetails: UIViewController {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityCell", for: indexPath) as! ActivityTableViewCell
-        cell.activity = selectedWorkout?.activities[indexPath.item]
+        
+        cell.activity = selectedWorkout?.activities[indexPath.row]
         return cell
     }
 
@@ -31,6 +32,8 @@ class RoutineDetails: UIViewController {
         //Adds the logo to the top center, as well as removing text from back button, needs to be on every VC
         styleTopBar(nav: navigationItem)
         
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.dataSource = self //set the datasource
     }
     
     override func viewWillAppear(_ animated: Bool) {

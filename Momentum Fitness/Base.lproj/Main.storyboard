@@ -993,21 +993,21 @@ of training)</string>
             <objects>
                 <viewController id="9Sy-GL-cRC" customClass="GreatJobVC" customModule="Momentum_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RQM-v7-Aqv">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIs-7Y-yYn">
-                                <rect key="frame" x="-14.666666666666657" y="650" width="419.33333333333326" height="200"/>
+                                <rect key="frame" x="-14.666666666666657" y="623" width="419.33333333333326" height="200"/>
                                 <state key="normal" image="btnHome"/>
                                 <connections>
                                     <segue destination="Ae0-6F-ml4" kind="showDetail" id="eIW-nO-pQb"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="6TU-4b-bXS">
-                                <rect key="frame" x="113.66666666666669" y="189" width="163" height="163"/>
+                                <rect key="frame" x="113.66666666666669" y="162" width="163" height="163"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great job!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIs-44-Dd8">
-                                <rect key="frame" x="76.666666666666686" y="423" width="237" height="60"/>
+                                <rect key="frame" x="76.666666666666686" y="396" width="237" height="60"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1056,7 +1056,7 @@ of training)</string>
                                     <constraint firstAttribute="width" constant="319" id="Phd-8f-uGE"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityCell" id="m5g-MJ-VS9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActivityCell" id="m5g-MJ-VS9" customClass="ActivityTableViewCell" customModule="Momentum_Fitness" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="319" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m5g-MJ-VS9" id="eAN-WH-NoM">
@@ -1336,6 +1336,7 @@ of training)</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="0o6-a8-xVr"/>
         <segue reference="eIW-nO-pQb"/>
     </inferredMetricsTieBreakers>
     <resources>

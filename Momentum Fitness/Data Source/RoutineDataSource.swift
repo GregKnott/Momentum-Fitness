@@ -48,10 +48,21 @@ class RoutineDataSource: NSObject {
                 //read all data in core storage and iterate thorugh to append to activities
                 for data in coreData{
                     let coreName: String? = data.value(forKey: "name") as? String
-                    //Create a new Activity object to store in coredata
-                    var newWorkout = WorkoutObject(name: coreName!, activities: [])
-                    
-                    workout.append(newWorkout)
+                    var finalActivities: [ActivityObject] = []
+                    let coreActivities = data.value(forKey: "activities") as? Set<NSManagedObject>
+                    if (coreActivities != nil){
+                        for activity in coreActivities! {
+                            let activityName = activity.value(forKey: "name") as? String
+                            let activityReps = activity.value(forKey: "reps") as? String
+                            let activityWeight = activity.value(forKey: "weight") as? String
+
+                            let activityObject: ActivityObject = ActivityObject(name: activityName!, reps: activityReps!, weight: activityWeight!)
+                            finalActivities.append(activityObject)
+                        }
+                    }
+                        //Create a new Activity object to store in coredata
+                    let newWorkout = WorkoutObject(name: coreName!, activities: finalActivities)
+                        workout.append(newWorkout)
                 }
             }
             
