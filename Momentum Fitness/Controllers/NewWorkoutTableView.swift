@@ -29,6 +29,4 @@ class NewWorkoutTableView: UITableView {
     override func numberOfRows(inSection section: Int) -> Int {
         return workoutDataSource.numberOfActivity()
     }
-    
-
 }

@@ -755,8 +755,11 @@ of training)</string>
                                     <constraint firstAttribute="height" constant="586.33333333333326" id="SdN-jJ-LOZ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good morning [User]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NM-ip-Nxc">
-                                <rect key="frame" x="27.333333333333343" y="125.33333333333333" width="335.66666666666663" height="39.666666666666671"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good morning [User]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NM-ip-Nxc">
+                                <rect key="frame" x="27" y="125.33333333333333" width="336" height="39.666666666666671"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335.67000000000002" id="fjS-af-mTb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -825,6 +828,7 @@ of training)</string>
                         <viewLayoutGuide key="safeArea" id="wKr-9m-ZOX"/>
                         <color key="backgroundColor" name="Main color"/>
                         <constraints>
+                            <constraint firstItem="5NM-ip-Nxc" firstAttribute="centerX" secondItem="hWT-ct-na4" secondAttribute="centerX" id="0D4-xm-cxY"/>
                             <constraint firstItem="nuk-zU-g1O" firstAttribute="leading" secondItem="hWT-ct-na4" secondAttribute="leadingMargin" id="4HI-Uh-xNh"/>
                             <constraint firstItem="wKr-9m-ZOX" firstAttribute="bottom" secondItem="RaN-vz-ORC" secondAttribute="bottom" constant="479" id="7GK-ym-0vG"/>
                             <constraint firstItem="nuk-zU-g1O" firstAttribute="bottom" secondItem="wKr-9m-ZOX" secondAttribute="bottom" id="CVi-93-oMz"/>
@@ -836,9 +840,8 @@ of training)</string>
                             <constraint firstItem="nuk-zU-g1O" firstAttribute="top" secondItem="hWT-ct-na4" secondAttribute="top" constant="277" id="Mzj-Y0-ON6"/>
                             <constraint firstItem="EMu-xj-LbL" firstAttribute="centerX" secondItem="hWT-ct-na4" secondAttribute="centerX" id="QTc-MW-aNG"/>
                             <constraint firstItem="nuk-zU-g1O" firstAttribute="centerY" secondItem="hWT-ct-na4" secondAttribute="centerY" constant="121.5" id="bpP-Hg-trh"/>
-                            <constraint firstItem="5NM-ip-Nxc" firstAttribute="centerX" secondItem="EMu-xj-LbL" secondAttribute="centerX" id="egb-hu-xOc"/>
+                            <constraint firstItem="5NM-ip-Nxc" firstAttribute="centerY" secondItem="hWT-ct-na4" secondAttribute="centerY" constant="-276.82999999999998" id="eqK-5G-0UL"/>
                             <constraint firstItem="UaR-Gp-35M" firstAttribute="centerY" secondItem="hWT-ct-na4" secondAttribute="centerY" constant="-322.5" id="f8o-s6-9WN"/>
-                            <constraint firstItem="5NM-ip-Nxc" firstAttribute="top" secondItem="wKr-9m-ZOX" secondAttribute="top" constant="81.333333333333314" id="gO6-VE-dun"/>
                             <constraint firstItem="RaN-vz-ORC" firstAttribute="leading" secondItem="hWT-ct-na4" secondAttribute="leadingMargin" constant="-79" id="iNR-kL-QrG"/>
                         </constraints>
                     </view>
@@ -862,7 +865,7 @@ of training)</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="mqr-6A-yok">
-                                <rect key="frame" x="0.0" y="257.00000000000006" width="390" height="586.33333333333348"/>
+                                <rect key="frame" x="0.0" y="257" width="390" height="591"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeNoon" translatesAutoresizingMaskIntoConstraints="NO" id="AwB-yi-aOj">
                                 <rect key="frame" x="-63" y="-82" width="495" height="413"/>
@@ -906,7 +909,7 @@ of training)</string>
                             <constraint firstItem="wiV-vj-oed" firstAttribute="centerY" secondItem="isI-Es-pRO" secondAttribute="centerY" constant="-32" id="g2x-ag-7K2"/>
                             <constraint firstItem="wiV-vj-oed" firstAttribute="centerX" secondItem="isI-Es-pRO" secondAttribute="centerX" id="inI-sa-30Q"/>
                             <constraint firstItem="mqr-6A-yok" firstAttribute="top" secondItem="62K-XW-Daf" secondAttribute="top" constant="213" id="jdc-Rx-Bye"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="mqr-6A-yok" secondAttribute="bottom" constant="-33.333333333333485" id="qdC-uk-mYK"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="mqr-6A-yok" secondAttribute="bottom" constant="-38" id="qdC-uk-mYK"/>
                             <constraint firstItem="xe7-kC-hhB" firstAttribute="centerY" secondItem="isI-Es-pRO" secondAttribute="centerY" constant="172.5" id="qiO-cw-Yuh"/>
                             <constraint firstItem="CK5-Fs-xZs" firstAttribute="centerY" secondItem="isI-Es-pRO" secondAttribute="centerY" constant="-268.5" id="rVh-i4-ZDx"/>
                             <constraint firstItem="mqr-6A-yok" firstAttribute="centerX" secondItem="isI-Es-pRO" secondAttribute="centerX" id="rnq-Zo-cgm"/>
@@ -993,21 +996,21 @@ of training)</string>
             <objects>
                 <viewController id="9Sy-GL-cRC" customClass="GreatJobVC" customModule="Momentum_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RQM-v7-Aqv">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIs-7Y-yYn">
-                                <rect key="frame" x="-14.666666666666657" y="623" width="419.33333333333326" height="200"/>
+                                <rect key="frame" x="-14.666666666666657" y="650" width="419.33333333333326" height="200"/>
                                 <state key="normal" image="btnHome"/>
                                 <connections>
                                     <segue destination="Ae0-6F-ml4" kind="showDetail" id="eIW-nO-pQb"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="6TU-4b-bXS">
-                                <rect key="frame" x="113.66666666666669" y="162" width="163" height="163"/>
+                                <rect key="frame" x="113.66666666666669" y="189" width="163" height="163"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great job!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIs-44-Dd8">
-                                <rect key="frame" x="76.666666666666686" y="396" width="237" height="60"/>
+                                <rect key="frame" x="76.666666666666686" y="423" width="237" height="60"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1127,6 +1130,7 @@ of training)</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1336,7 +1340,7 @@ of training)</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0o6-a8-xVr"/>
+        <segue reference="Iug-iO-zf0"/>
         <segue reference="eIW-nO-pQb"/>
     </inferredMetricsTieBreakers>
     <resources>

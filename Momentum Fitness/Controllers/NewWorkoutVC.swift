@@ -61,8 +61,6 @@ class NewWorkoutVC: UIViewController, UITableViewDataSource, UITableViewDelegate
                 nsActivity.setValue(activity.reps, forKey: "reps")
                 nsActivity.setValue(activity.weight, forKey: "weight")
                 workout.setValue(NSSet(object: nsActivity), forKey: "activities")
-                print(activity)
-                print(nsActivity)
             }
             
             
@@ -75,6 +73,12 @@ class NewWorkoutVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             }
         }
     }
+    
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.accessoryType = .checkmark
+
+      }
     
     override func viewDidLoad() {
         super.viewDidLoad()
