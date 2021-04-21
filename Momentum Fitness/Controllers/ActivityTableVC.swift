@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ActivityTableVC: UITableViewController {
     
@@ -16,17 +17,15 @@ class ActivityTableVC: UITableViewController {
     @IBOutlet var weightTextField: UITextField!
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        super.viewDidLoad(){
+            
+        }
     }
-
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    /*
+        Creates a new activity and sets the name, reps and weight properties based on the input in the text fields and
+        stores the activity in Core Data when the user returns to the previous view controller/page
+     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
@@ -36,7 +35,25 @@ class ActivityTableVC: UITableViewController {
            let activityReps = repsTextField.text,
            let activityWeight = weightTextField.text {
             activity = Activity(name: activityName, reps: activityReps, weight: activityWeight)
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            else {
+                return
+            }
+            
+            let managedContext = appDelegate.persistentContainer.viewContext
+            let entity = NSEntityDescription.entity(forEntityName: "Activity", in: managedContext)!
+            let activity = NSManagedObject(entity: entity, insertInto: managedContext)
+            
+            activity.setValue(activityName, "name")
+            activity.setValue(activityReps, "reps")
+            activity.setValue(activityWeight, "weight")
+
+            do{
+                try managedContext.save()
+                users.append(user)
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
         }
-        
     }
 }

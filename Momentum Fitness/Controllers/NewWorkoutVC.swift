@@ -35,14 +35,32 @@ class NewWorkoutVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBAction func addActivity(_ segue: UIStoryboardSegue) {
         let activityTableVC = segue.source as? ActivityTableVC
         let activity = activityTableVC!.activity
-        
         workoutDataSource.append(newActivity: activity!, to: tableView)
+        activities.append(activity)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AddWorkoutToRoutine",
            let workoutName = workoutNameTextField.text{
-            workout = Workout(name: workoutName)
+            workout = Workout(name: workoutName, activities: activities)
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            else {
+                return
+            }
+            
+            let managedContext = appDelegate.persistentContainer.viewContext
+            let entity = NSEntityDescription.entity(forEntityName: "Workout", in: managedContext)!
+            let workout = NSManagedObject(entity: entity, insertInto: managedContext)
+            
+            workout.setValue(workoutName, "name")
+            workout.setValue(activities, "actvities")
+
+            do{
+                try managedContext.save()
+                users.append(user)
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
         }
     }
     

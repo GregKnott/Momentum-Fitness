@@ -41,6 +41,7 @@
 		C9DA6CD3262A199600524BA8 /* ActivityTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CD2262A199600524BA8 /* ActivityTableVC.swift */; };
 		C9DA6CEA262A5C9600524BA8 /* WorkoutRoutineTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CE9262A5C9600524BA8 /* WorkoutRoutineTableView.swift */; };
 		C9DA6CEF262A60F600524BA8 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CEE262A60F600524BA8 /* Workout.swift */; };
+		C9DA6D0C262F9FAA00524BA8 /* RoutineDetailsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6D04262F9B3600524BA8 /* RoutineDetailsTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		C9DA6CD2262A199600524BA8 /* ActivityTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableVC.swift; sourceTree = "<group>"; };
 		C9DA6CE9262A5C9600524BA8 /* WorkoutRoutineTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutRoutineTableView.swift; path = "Momentum Fitness/Controllers/WorkoutRoutineTableView.swift"; sourceTree = SOURCE_ROOT; };
 		C9DA6CEE262A60F600524BA8 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		C9DA6D04262F9B3600524BA8 /* RoutineDetailsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailsTableView.swift; sourceTree = "<group>"; };
 		CE86AA053863FDE218E2A88A /* Pods_Momentum_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Momentum_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF19EF58E4F677342688565F /* Pods-Momentum FitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum FitnessTests.release.xcconfig"; path = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 		375E2AB42617497A00E1CFCA /* Momentum FitnessTests */ = {
 			isa = PBXGroup;
 			children = (
+				C9DA6D04262F9B3600524BA8 /* RoutineDetailsTableView.swift */,
 				375E2AB52617497A00E1CFCA /* Momentum_FitnessTests.swift */,
 				375E2AB72617497A00E1CFCA /* Info.plist */,
 			);
@@ -543,6 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				375E2AB62617497A00E1CFCA /* Momentum_FitnessTests.swift in Sources */,
+				C9DA6D0C262F9FAA00524BA8 /* RoutineDetailsTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
