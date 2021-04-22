@@ -11,9 +11,12 @@ import CoreData
 
 class NewWorkoutDataSource : NSObject {
     
+    //A blank array to store activity objects into
     var activity: [ActivityObject] = []
+    //A blank array to store fetched core data
     var coreData: [NSManagedObject] = []
     
+    //A function to generate sample activity data
     static func generateActivityData() -> [ActivityObject] {
         
         return [
@@ -24,35 +27,36 @@ class NewWorkoutDataSource : NSObject {
     }
     
     override init() {
-        //need a reference to app delegate
+        //A reference to app delegate
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
                         
-        //get the container from app delegate
+        //Get the container from app delegate
         let managedContext = appDelegate.persistentContainer.viewContext
                         
-        //fetch person object from container
+        //Fetch activity object from core data
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Activity")
                         
         do {
+            //Perform a fetch request for data
             coreData = try managedContext.fetch(fetchRequest)
-            //perform a search inside container to retrieve this object
+            //If results are not empty continue
             if coreData.count > 0 {
-                //read all data in core storage and iterate thorugh to append to activities
+                //Read all data in core storage and iterate through to store activities
                 for data in coreData{
                     let coreName: String? = data.value(forKey: "name") as? String
                     let coreReps: String? = data.value(forKey: "reps") as? String
                     let coreWeight: String? = data.value(forKey: "weight") as? String
-                    //Create a new Activity object to store in coredata
+                    //Create a new Activity object made from core data
                     var newActivity = ActivityObject(name: coreName!, reps: coreReps!, weight: coreWeight!)
-                    
+                    //Add activity to global array
                     activity.append(newActivity)
                 }
             }
             
             else{
-                //if there are no entries at the start, generate sample ones
+                //If there are no entries at the start, generate and provide sample ones
                 activity = NewWorkoutDataSource.generateActivityData()
             }
                             
@@ -61,15 +65,18 @@ class NewWorkoutDataSource : NSObject {
         }
     }
     
+    //A method to return the number of activities
     func numberOfActivity() -> Int {
         activity.count
     }
     
+    //A method to add a new activity to the provided table
     func append(newActivity: ActivityObject, to tableView: UITableView){
         activity.append(newActivity)
         tableView.insertRows(at: [IndexPath(row: activity.count-1, section: 0)], with: .automatic)
     }
     
+    //A method to return the activity at the provided index
     func activity(at IndexPath: IndexPath) -> ActivityObject {
         activity[IndexPath.row]
     }

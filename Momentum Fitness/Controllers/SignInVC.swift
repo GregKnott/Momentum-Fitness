@@ -31,13 +31,18 @@ class SignInVC: UIViewController {
             errortext.isHidden = false
         }
         else{
+            //Create a new KeychainSwift object to connect to keychain
             let keychain = KeychainSwift()
+            //Set access group for the app to access
                 keychain.accessGroup = "VDQS4882Z8.ca.sheridancollege.Momentum-Fitness"
+            //If email and password match any stored in the keychain, continue
                 if email == keychain.get("email"),
                    password == keychain.get("password") {
+                    //Redirect user to the home page
                     self.performSegue(withIdentifier: "signinSuccess", sender: (Any).self)
                 }
                 else {
+                    //Alert user that credentials were invalid
                     errortext.text = "Invalid email or password"
                     errortext.isHidden = false
             }

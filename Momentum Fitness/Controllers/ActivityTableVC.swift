@@ -10,8 +10,10 @@ import CoreData
 
 class ActivityTableVC: UITableViewController {
     
+    //Create a new blank activity object
     var activity: ActivityObject?
     
+    //Connect to storyboard elements
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var repsTextField: UITextField!
     @IBOutlet var weightTextField: UITextField!
@@ -42,6 +44,7 @@ class ActivityTableVC: UITableViewController {
             let entity = NSEntityDescription.entity(forEntityName: "Activity", in: managedContext)!
             let activity = NSManagedObject(entity: entity, insertInto: managedContext)
             
+            //Store values in core data
             activity.setValue(activityName, forKey: "name")
             activity.setValue(activityReps, forKey: "reps")
             activity.setValue(activityWeight, forKey: "weight")

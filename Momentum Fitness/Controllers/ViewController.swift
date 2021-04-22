@@ -7,13 +7,13 @@
 
 import UIKit
 
-//global function to set the style of the top bar
+//Global function to set the style of the top bar
 func styleTopBar(nav: UINavigationItem){
     
-    //set back bar button to have no title
+    //Set back bar button to have no title
     nav.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     
-    //set title bar button to the logo
+    //Set title bar button to the logo
     nav.titleView = UIImageView(image: UIImage(named: "logoSmall"))
 }
 

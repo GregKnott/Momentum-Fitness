@@ -9,6 +9,7 @@ import UIKit
 
 class ActivityTableViewCell: UITableViewCell {
         
+        //Create blank UILabels to be added programatically
         var nameLabel = UILabel()
         var repsLabel = UILabel()
         var weightLabel = UILabel()
@@ -16,6 +17,8 @@ class ActivityTableViewCell: UITableViewCell {
         var activity: ActivityObject? {
             didSet {
                 guard let activity = activity else {return}
+                
+                //Apply formatting on label format
                 self.addSubview(nameLabel)
                 nameLabel.translatesAutoresizingMaskIntoConstraints = false
                 nameLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.0).isActive = true
@@ -37,6 +40,7 @@ class ActivityTableViewCell: UITableViewCell {
                 weightLabel.topAnchor.constraint(equalTo: topAnchor, constant: 1.0).isActive = true
                 weightLabel.rightAnchor.constraint(equalToSystemSpacingAfter: repsLabel.rightAnchor, multiplier: 25.5).isActive = true
                 
+                //Assign the labels their respective values
                 nameLabel.text = activity.name
                 repsLabel.text = activity.reps
                 weightLabel.text = activity.weight

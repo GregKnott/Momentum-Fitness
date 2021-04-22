@@ -21,40 +21,42 @@ class GenderVC: UIViewController {
         styleTopBar(nav: navigationItem)
     }
     @IBAction func maleRB(_ sender: Any) {
+        //If user clicks on the male gender radio button, update the gender
         gender = "Male"
     }
     @IBAction func femaleRB(_ sender: Any) {
+        //If user clicks on the female gender radio button, update the gender
         gender = "Female"
     }
     @IBAction func otherRB(_ sender: Any) {
+        //If user clicks on the other gender radio button, update the gender
         gender = "Other"
     }
     
     @IBAction func nextBtnClicked(_ sender: Any) {
-        //need a reference to app delegate
-                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                    return
-                }
+        //Need a reference to app delegate
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
                 
-                //get the container from app delegate
-                let managedContext = appDelegate.persistentContainer.viewContext
+        //Get the container from app delegate
+        let managedContext = appDelegate.persistentContainer.viewContext
                 
-                //fetch person object from container
-                let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
+        //Fetch Profile object from container
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
                 
-                do {
-                    profileData = try managedContext.fetch(fetchRequest)
-                    //perform a search inside container to retrieve this object
-                    if profileData.count > 0 {
-                        //get first entry
-                        let fetchedData: Profile = profileData[0] as! Profile
-                        //store in variable
-                        
-                        fetchedData.setValue(gender, forKey: "gender");
-                    }
-                    
-                } catch let error as NSError{
-                    print("Could not fetch. \(error), \(error.userInfo)")
-                }
+        do {
+            profileData = try managedContext.fetch(fetchRequest)
+            //Check if there is an existing profile record
+            if profileData.count > 0 {
+                //Get the first entry to add to
+                let fetchedData: Profile = profileData[0] as! Profile
+                //Store gender in core data
+                fetchedData.setValue(gender, forKey: "gender");
+            }
+            
+        } catch let error as NSError{
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
     }
 }

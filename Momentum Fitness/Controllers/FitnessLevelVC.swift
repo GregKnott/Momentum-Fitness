@@ -11,8 +11,9 @@ import DLRadioButton
 
 class FitnessLevelVC: UIViewController {
     
+    //Create a blank array to be filled with core data
     var profileData: [NSManagedObject] = []
-    var fitnessLevel: String = "Beginner"
+    var fitnessLevel: String = "Beginner" //Set a default value
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,42 +23,44 @@ class FitnessLevelVC: UIViewController {
     }
     
     @IBAction func beginnerRB(_ sender: Any) {
+        //If user clicks on the beginner radio button, update the fitness level
         fitnessLevel = "Beginner"
     }
     
     @IBAction func intermediateRB(_ sender: Any) {
+        //If user clicks on the intermediate radio button, update the fitness level
         fitnessLevel = "Intermediate"
     }
     
     @IBAction func advancedRB(_ sender: Any) {
+        //If user clicks on the advanced radio button, update the fitness level
         fitnessLevel = "Advanced"
     }
     
     @IBAction func nextBtnClicked(_ sender: Any) {
-        //need a reference to app delegate
-                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                    return
-                }
+        //Need a reference to app delegate
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
                 
-                //get the container from app delegate
-                let managedContext = appDelegate.persistentContainer.viewContext
+        //Get the container from app delegate
+        let managedContext = appDelegate.persistentContainer.viewContext
                 
-                //fetch person object from container
-                let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
+        //Fetch Profile object from container
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
                 
-                do {
-                    profileData = try managedContext.fetch(fetchRequest)
-                    //perform a search inside container to retrieve this object
-                    if profileData.count > 0 {
-                        //get first entry
-                        let fetchedData: Profile = profileData[0] as! Profile
-                        //store in variable
-                        
-                        fetchedData.setValue(fitnessLevel, forKey: "fitnessLevel");
-                    }
+        do {
+            profileData = try managedContext.fetch(fetchRequest)
+            //If profile records exist, continue
+            if profileData.count > 0 {
+                //Get first entry to add on to
+                let fetchedData: Profile = profileData[0] as! Profile
+                //Store fitness level in core storage
+                fetchedData.setValue(fitnessLevel, forKey: "fitnessLevel");
+            }
                     
-                } catch let error as NSError{
-                    print("Could not fetch. \(error), \(error.userInfo)")
-                }
+        } catch let error as NSError{
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
     }
 }

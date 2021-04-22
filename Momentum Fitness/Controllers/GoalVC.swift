@@ -15,7 +15,7 @@ class GoalVC: UIViewController {
 
     //A variable to store the users last selection
     //This will be put in core storage
-    var goal: String = "Lose weight" //default value
+    var goal: String = "Lose weight" //Default value
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,50 +25,51 @@ class GoalVC: UIViewController {
     }
     
     @IBAction func loseWeightRB(_ sender: DLRadioButton) {
+        //If user clicks on the lose weight radio button, update the goal
         goal = "Lose weight"
     }
     
     @IBAction func maintainWeightRB(_ sender: DLRadioButton) {
+        //If user clicks on the maintain weight radio button, update the goal
         goal = "Maintain weight"
     }
     
     @IBAction func gainWeightRB(_ sender: DLRadioButton) {
+        //If user clicks on the gain weight radio button, update the goal
         goal = "Gain weight"
     }
     
     @IBAction func nextBtnClicked(_ sender: Any) {
-        //need a reference to app delegate
-                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                    return
-                }
+        //Need a reference to app delegate
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
                 
-                //get the container from app delegate
-                let managedContext = appDelegate.persistentContainer.viewContext
+        //Get the container from app delegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+            
+        //Fetch Profile object from container
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
                 
-                //fetch person object from container
-                let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
-                
-                do {
-                    profileData = try managedContext.fetch(fetchRequest)
-                    //perform a search inside container to retrieve this object
-                    //check if there are any records
-                    if profileData.count > 0 {
-                        //get first entry
-                        let fetchedData: Profile = profileData[0] as! Profile
-                        //store in variable
-                        //overwrite existing value
-                        fetchedData.setValue(goal, forKey: "goal");
-                    } else{
-                        //create new entry
-                                
-                        let profileData = Profile(context: managedContext)
-
-                        profileData.setValue(goal, forKey: "goal")
-                    }
+        do {
+            profileData = try managedContext.fetch(fetchRequest)
+            //Check if there are any existing records
+            if profileData.count > 0 {
+                //Get first entry
+                let fetchedData: Profile = profileData[0] as! Profile
+                //Store current goal value in local storage
+                //Will overwrite any existing values
+                fetchedData.setValue(goal, forKey: "goal");
+            } else{
+                //If there are no existing values, create new Profile entry
+                let profileData = Profile(context: managedContext)
+                //Store current goal value in local storage
+                profileData.setValue(goal, forKey: "goal")
+            }
                     
-                } catch let error as NSError{
-                    print("Could not fetch. \(error), \(error.userInfo)")
-                }
+        } catch let error as NSError{
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
     }
     
 }

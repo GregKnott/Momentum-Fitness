@@ -9,11 +9,13 @@ import UIKit
 
 class WorkoutTableViewCell: UITableViewCell {
     
+    //Create a blank UILabel to be added programatically
     var nameLabel = UILabel()
     
     var workout: WorkoutObject? {
         didSet {
             guard let workout = workout else {return}
+            //Apply formatting on label format
             self.addSubview(nameLabel)
             nameLabel.translatesAutoresizingMaskIntoConstraints = false
             nameLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.0).isActive = true
@@ -21,6 +23,7 @@ class WorkoutTableViewCell: UITableViewCell {
             nameLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 1.0).isActive = true
             nameLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 0.5)
             
+            //Apply UI formatting on label
             nameLabel.font = UIFont.systemFont(ofSize: 25)
             nameLabel.lineBreakMode = .byWordWrapping
             nameLabel.numberOfLines = 3

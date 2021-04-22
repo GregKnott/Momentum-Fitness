@@ -24,30 +24,31 @@ class UserProfileVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(true)
+        //Create a new KeychainSwift object to connect to Keychain
         let keychain = KeychainSwift()
-            keychain.accessGroup = "VDQS4882Z8.ca.sheridancollege.Momentum-Fitness"
-        
+        //Set the access group for keychain
+        keychain.accessGroup = "VDQS4882Z8.ca.sheridancollege.Momentum-Fitness"
+        //Get the name stored in keychain
         nameLabel.text = keychain.get("name")
         
-        //need a reference to app delegate
+        //Need a reference to app delegate
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
                         
-        //get the container from app delegate
+        //Get the container from app delegate
         let managedContext = appDelegate.persistentContainer.viewContext
                         
-        //fetch person object from container
+        //Fetch Profile object from container
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
                         
         do {
             profileData = try managedContext.fetch(fetchRequest)
-            //perform a search inside container to retrieve this object
+            //Check if records are not empty
             if profileData.count > 0 {
-                //get first entry
+                //Fet first entry
                 let fetchedData: Profile = profileData[0] as! Profile
-                //store in variable
-                                
+                //Display details on screen
                 detailsTV.text = "Goal: \(fetchedData.goal ?? "") \nFitness level: \(fetchedData.fitnessLevel ?? "") \nGender: \(fetchedData.gender ?? "") \nHeight \(fetchedData.height) \nWeight: \(fetchedData.weight ?? 0)"
             }
                             
@@ -55,14 +56,4 @@ class UserProfileVC: UIViewController {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

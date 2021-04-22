@@ -25,8 +25,11 @@ class SignupVC: UIViewController {
     
     @IBAction func signUp(_ sender: Any) {
         
+        //If fields are left blank do not let the user continue
         if (passwordText.text == "" || emailText.text == "" || nameText.text == ""){
+            //Update error text with message
             errorText.text = "Fields cannot be left blank"
+            //Show error text
             errorText.isHidden = false
         }
         else if (confirmPassword.text != passwordText.text){
@@ -39,13 +42,17 @@ class SignupVC: UIViewController {
                   let name = nameText.text
             else { return }
                 
+            //Create a new KeychainSwift object to connect to keychain
             let keychain = KeychainSwift()
-            //${AppIdentifierPrefix} is the Prefix (or TeamID) that is taken from the App ID in the Apple Developer Account portal.
+            //Set up keychain to connect to correct access group
             keychain.accessGroup = "VDQS4882Z8.ca.sheridancollege.Momentum-Fitness"
+            //Store email in keychain
             keychain.set(email, forKey: "email")
+            //Store password in keychain
             keychain.set(password, forKey: "password")
+            //Store name in keychain
             keychain.set(name, forKey: "name")
-            
+            //Redirect user to survey page
             self.performSegue(withIdentifier: "signupSuccess", sender: (Any).self)
         }
     }

@@ -29,33 +29,33 @@ class WeightHeightVC: UIViewController {
         weight = Double(weightTF.text!) ?? 0
         height = Int(heightTF.text!) ?? 0
         
-        //need a reference to app delegate
-                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                    return
-                }
+        //Need a reference to app delegate
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
                 
-                //get the container from app delegate
-                let managedContext = appDelegate.persistentContainer.viewContext
+        //Get the container from app delegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+            
+        //Fetch Profile object from container
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
                 
-                //fetch person object from container
-                let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Profile")
+        do {
+            profileData = try managedContext.fetch(fetchRequest)
+            
+            //If profile data returned is not empty, continue
+            if profileData.count > 0 {
                 
-                do {
-                    profileData = try managedContext.fetch(fetchRequest)
-                    //perform a search inside container to retrieve this object
-                    if profileData.count > 0 {
-                        //get first entry
-                        let fetchedData: Profile = profileData[0] as! Profile
-                        //store in variable
-                        
-                        fetchedData.setValue(height, forKey: "height");
-                        fetchedData.setValue(weight, forKey: "weight");
-                        
-                        print("Goal \(fetchedData.goal) \nFitness level \(fetchedData.fitnessLevel) \nGender: \(fetchedData.gender) \nHeight \(height) \nWeight: \(weight)")
-                    }
+                //Get first entry of fetched profiles
+                let fetchedData: Profile = profileData[0] as! Profile
+                
+                //Store weight and height in core data
+                fetchedData.setValue(height, forKey: "height");
+                fetchedData.setValue(weight, forKey: "weight");
+            }
                     
-                } catch let error as NSError{
-                    print("Could not fetch. \(error), \(error.userInfo)")
-                }
+        } catch let error as NSError{
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
     }
 }

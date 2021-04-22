@@ -42,19 +42,14 @@ class WorkoutRoutineVC: UIViewController, UITableViewDataSource, UITableViewDele
     }
     
 
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        
+        //If segue identifier is routineDetails, continue
         if (segue.identifier == "routineDetails"){
+            //Retrieve the current Workout object in the table
             let workoutDetails: WorkoutObject = routineDataSource.workout(at: tableView.indexPathForSelectedRow!)
-            
+            //Set redirect location
             var routineDetails =  segue.destination as! RoutineDetails
-            
+            //Pass along the selected Workout object
             routineDetails.selectedWorkout = workoutDetails
         }
     }
