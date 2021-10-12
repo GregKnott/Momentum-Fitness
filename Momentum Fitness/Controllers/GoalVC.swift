@@ -10,6 +10,8 @@ import DLRadioButton
 import CoreData
 
 class GoalVC: UIViewController {
+    @objc var loseWeightRB : DLRadioButton!
+    
     
     var profileData: [NSManagedObject] = []
 
@@ -22,9 +24,26 @@ class GoalVC: UIViewController {
 
         //Adds the logo to the top center, as well as removing text from back button, needs to be on every VC
         styleTopBar(nav: navigationItem)
+        
+        
+        //lose weight Radio Button
+        loseWeightRB = DLRadioButton() as! DLRadioButton
+        loseWeightRB?.imageView?.contentMode = .scaleAspectFill
+        self.view.addSubview(loseWeightRB!)
+        loseWeightRB?.translatesAutoresizingMaskIntoConstraints = false
+        
+        loseWeightRB.backgroundColor = UIColor.white
+        loseWeightRB?.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
+        loseWeightRB?.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier : 1.0).isActive = true
+        loseWeightRB?.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier : 0.2).isActive = true
+        loseWeightRB?.centerXAnchor.constraint(equalToSystemSpacingAfter: self.view.centerXAnchor, multiplier : 0.7).isActive = true
+        loseWeightRB?.addTarget(self, action: #selector(getter: GoalVC.loseWeightRB), for: UIControl.Event.touchUpInside)
+        
+        
+        
     }
     
-    @IBAction func loseWeightRB(_ sender: DLRadioButton) {
+    @objc func loseWeightRB(_ sender: DLRadioButton) {
         //If user clicks on the lose weight radio button, update the goal
         goal = "Lose weight"
     }
