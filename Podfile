@@ -8,6 +8,10 @@ target 'Momentum Fitness' do
   # Pods for Momentum Fitness
 	pod 'KeychainSwift'
 	pod 'DLRadioButton'
+	pod 'Firebase/Core', :inhibit_warnings => true
+  	pod 'Firebase/Database', :inhibit_warnings => true
+  	pod 'Firebase/Auth', :inhibit_warnings => true
+	pod 'GoogleSignIn'
 
   target 'Momentum FitnessTests' do
     inherit! :search_paths

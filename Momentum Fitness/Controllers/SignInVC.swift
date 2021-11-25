@@ -27,7 +27,7 @@ class SignInVC: UIViewController {
             }
         }
        styleTopBar(nav: navigationItem)
-        self.view.backgroundColor = UIColor.green
+        self.view.backgroundColor = UIColor.init(named: "Theme")
         
         
         

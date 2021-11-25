@@ -24,7 +24,7 @@ class SignupVC: UIViewController {
         super.viewDidLoad()
         styleTopBar(nav: navigationItem)
         
-        self.view.backgroundColor = UIColor.green
+        self.view.backgroundColor = UIColor.init(named: "Theme")
         
         
         //This is the label for the Sign In page

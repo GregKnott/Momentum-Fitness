@@ -76,6 +76,7 @@ class ViewController: UIViewController {
         
         homeImage  = UIImageView(image: UIImage(named: "splashSilhouette"))
         view.addSubview(homeImage!)
+        homeImage?.contentMode = .scaleAspectFit
         homeImage!.translatesAutoresizingMaskIntoConstraints = false
         homeImage?.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.50).isActive = true
         homeImage?.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.16).isActive = true
@@ -87,12 +88,12 @@ class ViewController: UIViewController {
         //this the Continue Button
         cont = UIButton()
         cont?.setBackgroundImage(UIImage(named: "Continue"), for: .normal)
-        cont?.imageView?.contentMode = .scaleAspectFill
+        cont?.imageView?.contentMode = .scaleAspectFit
         self.view.addSubview(cont!)
         cont?.translatesAutoresizingMaskIntoConstraints = false
-        cont?.topAnchor.constraint(equalTo: view.topAnchor, constant: 700).isActive = true
+        cont?.topAnchor.constraint(equalTo: view.topAnchor, constant: 650).isActive = true
         cont?.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier : 1.0).isActive = true
-        cont?.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier : 0.2).isActive = true
+        cont?.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier : 0.27).isActive = true
         cont?.centerXAnchor.constraint(equalToSystemSpacingAfter: self.view.centerXAnchor, multiplier : 0.5).isActive = true
         cont?.addTarget(self, action: #selector(ViewController.upBtnPressed), for: UIControl.Event.touchUpInside)
         
