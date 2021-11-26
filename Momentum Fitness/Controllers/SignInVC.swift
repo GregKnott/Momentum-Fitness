@@ -14,7 +14,7 @@ class SignInVC: UIViewController {
     var passwordText  : UITextField?
     var errortext : UITextField?
 
-    var signInButton : UIButton?
+    @IBOutlet var signInButton : UIButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,9 +46,15 @@ class SignInVC: UIViewController {
         //emailText!.center = self.view.center
         emailText!.placeholder = "Email"
         
+        //Set textbox to not autocorrect since it is an email
+        emailText?.autocorrectionType = .no
+        //Set textbox to not auto capitalize since it is an email
+        emailText?.autocapitalizationType = .none
+        
         emailText?.borderStyle = UITextField.BorderStyle.line
         
         emailText!.backgroundColor = UIColor.white
+        emailText!.textColor = .black
         
         
         
@@ -60,10 +66,20 @@ class SignInVC: UIViewController {
        // passwordText!.center = self.view.center
         passwordText!.placeholder = "Password"
         
+        //Set textbox to treat textbx as user creating new password
+        passwordText?.textContentType = .newPassword
+        //Set textbox to hide entered characters
+        passwordText?.isSecureTextEntry = true
+        
+        //Set textbox to not autocorrect since it is a password
+        passwordText?.autocorrectionType = .no
+        //Set textbox to not auto capitalize since it is a password
+        passwordText?.autocapitalizationType = .none
+        
         passwordText?.borderStyle = UITextField.BorderStyle.line
         
         passwordText!.backgroundColor = UIColor.white
-        
+        passwordText!.textColor = .black
     
         
         signInButton = UIButton()
@@ -75,7 +91,7 @@ class SignInVC: UIViewController {
         signInButton?.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier : 1.0).isActive = true
         signInButton?.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier : 0.2).isActive = true
         signInButton?.centerXAnchor.constraint(equalToSystemSpacingAfter: self.view.centerXAnchor, multiplier : 0.5).isActive = true
-        signInButton?.addTarget(self, action: #selector(SignInVC.upBtnPressed), for: UIControl.Event.touchUpInside)
+        signInButton?.addTarget(self, action: #selector(self.upBtnPressed), for: UIControl.Event.touchUpInside)
     }
     
     

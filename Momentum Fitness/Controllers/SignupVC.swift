@@ -49,9 +49,15 @@ class SignupVC: UIViewController {
        // passwordText!.center = self.view.center
         emailText!.placeholder = "Email"
         
+        //Set textbox to not autocorrect since it is an email
+        emailText?.autocorrectionType = .no
+        //Set textbox to not auto capitalize since it is an email
+        emailText?.autocapitalizationType = .none
+        
         emailText?.borderStyle = UITextField.BorderStyle.line
         
         emailText!.backgroundColor = UIColor.white
+        emailText!.textColor = .black
         
         
         
@@ -63,9 +69,20 @@ class SignupVC: UIViewController {
        // passwordText!.center = self.view.center
         passwordText!.placeholder = "Password"
         
+        //Set textbox to treat textbox as user creating new password
+        passwordText?.textContentType = .newPassword
+        //Set textbox to hide entered characters
+        passwordText?.isSecureTextEntry = true
+        
+        //Set textbox to not autocorrect since it is a password
+        passwordText?.autocorrectionType = .no
+        //Set textbox to not auto capitalize since it is a password
+        passwordText?.autocapitalizationType = .none
+        
         passwordText?.borderStyle = UITextField.BorderStyle.line
         
         passwordText!.backgroundColor = UIColor.white
+        passwordText!.textColor = .black
         
 
         
@@ -76,9 +93,20 @@ class SignupVC: UIViewController {
        // passwordText!.center = self.view.center
         confirmPassword!.placeholder = "Password"
         
+        //Set textbox to treat textbox as user creating new password
+        confirmPassword?.textContentType = .newPassword
+        //Set textbox to hide entered characters
+        confirmPassword?.isSecureTextEntry = true
+        
+        //Set textbox to not autocorrect since it is a password
+        confirmPassword?.autocorrectionType = .no
+        //Set textbox to not auto capitalize since it is a password
+        confirmPassword?.autocapitalizationType = .none
+        
         confirmPassword?.borderStyle = UITextField.BorderStyle.line
         
         confirmPassword!.backgroundColor = UIColor.white
+        confirmPassword!.textColor = .black
         
         
         
@@ -122,7 +150,7 @@ class SignupVC: UIViewController {
         
        
         let GoalVC = GoalVC()
-        navigationController?.pushViewController(GoalVC , animated: true)
+        navigationController?.pushViewController(GoalVC, animated: true)
         return;
     
     }
