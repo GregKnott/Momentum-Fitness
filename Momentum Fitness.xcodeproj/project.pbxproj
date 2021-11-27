@@ -33,6 +33,8 @@
 		C9A177002617D56F00C72952 /* NewWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */; };
 		C9A177052617E39200C72952 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A177042617E39200C72952 /* UserProfileVC.swift */; };
 		C9A1770A2617E9F300C72952 /* GreatJobVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A177092617E9F300C72952 /* GreatJobVC.swift */; };
+		C9ACA9832752BBD400BCEF28 /* TImeTargetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACA9822752BBD400BCEF28 /* TImeTargetVC.swift */; };
+		C9ACA9882752BD2C00BCEF28 /* TImerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACA9872752BD2C00BCEF28 /* TImerVC.swift */; };
 		C9DA6CA32629E34700524BA8 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CA22629E34700524BA8 /* Activity.swift */; };
 		C9DA6CAA2629E55900524BA8 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CA92629E55900524BA8 /* ActivityTableViewCell.swift */; };
 		C9DA6CB22629E58400524BA8 /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CB12629E58400524BA8 /* WorkoutTableViewCell.swift */; };
@@ -99,6 +101,8 @@
 		C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutVC.swift; sourceTree = "<group>"; };
 		C9A177042617E39200C72952 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		C9A177092617E9F300C72952 /* GreatJobVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatJobVC.swift; sourceTree = "<group>"; };
+		C9ACA9822752BBD400BCEF28 /* TImeTargetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TImeTargetVC.swift; sourceTree = "<group>"; };
+		C9ACA9872752BD2C00BCEF28 /* TImerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TImerVC.swift; sourceTree = "<group>"; };
 		C9DA6CA22629E34700524BA8 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		C9DA6CA92629E55900524BA8 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 		C9DA6CB12629E58400524BA8 /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 				C9DA6CCA2629F89500524BA8 /* NewWorkoutTableView.swift */,
 				C9DA6CD2262A199600524BA8 /* ActivityTableVC.swift */,
 				37F46F9D262F3201003526E1 /* RoutineDetails.swift */,
+				C9ACA9822752BBD400BCEF28 /* TImeTargetVC.swift */,
+				C9ACA9872752BD2C00BCEF28 /* TImerVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -515,6 +521,7 @@
 			files = (
 				C9DA6CA32629E34700524BA8 /* Activity.swift in Sources */,
 				37F46F9E262F3201003526E1 /* RoutineDetails.swift in Sources */,
+				C9ACA9832752BBD400BCEF28 /* TImeTargetVC.swift in Sources */,
 				379EE90D2617A4D400A9B007 /* FitnessLevelVC.swift in Sources */,
 				375E2AD326177A2800E1CFCA /* AccountNavigationVC.swift in Sources */,
 				C9A1770A2617E9F300C72952 /* GreatJobVC.swift in Sources */,
@@ -522,6 +529,7 @@
 				379EE9082617A4AA00A9B007 /* GoalVC.swift in Sources */,
 				C9DA6CD3262A199600524BA8 /* ActivityTableVC.swift in Sources */,
 				C9DA6CB22629E58400524BA8 /* WorkoutTableViewCell.swift in Sources */,
+				C9ACA9882752BD2C00BCEF28 /* TImerVC.swift in Sources */,
 				379EE8FE2617974400A9B007 /* HomeVC.swift in Sources */,
 				375E2AEB2617852100E1CFCA /* SignupVC.swift in Sources */,
 				C9DA6CAA2629E55900524BA8 /* ActivityTableViewCell.swift in Sources */,
