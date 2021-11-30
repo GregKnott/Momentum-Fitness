@@ -91,47 +91,142 @@ class SignInVC: UIViewController {
         signInButton?.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier : 1.0).isActive = true
         signInButton?.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier : 0.2).isActive = true
         signInButton?.centerXAnchor.constraint(equalToSystemSpacingAfter: self.view.centerXAnchor, multiplier : 0.5).isActive = true
-        signInButton?.addTarget(self, action: #selector(self.upBtnPressed), for: UIControl.Event.touchUpInside)
+        signInButton?.addTarget(self, action: #selector(SignInVC.signInBtnPressed), for: UIControl.Event.touchUpInside)
     }
     
     
-    
-    @objc func upBtnPressed()
+    @objc func signInBtnPressed(sender: UIButton!)
     {
+      validateFields()
+    
+    }
         
-       /** let email = emailText!.text
-        let password = passwordText!.text
-        
-        if (email == "" || password == ""){
-            errortext!.text = "Fields cannot be blank"
-            errortext!.isHidden = false
+    
+    func validateFields(){
+        if emailText!.text?.isEmpty == true
+        {
+            displayMyAlertMessage(userMessage: "Fields cant be blank");
+           return;
         }
-        
-        
-        else{
-            //perform a login with this information
-            Auth.auth().signIn(withEmail: emailText!.text!, password: passwordText!.text!) { user, error in
-                //if the sign in does not work, we will show a alert controller that says sign in failed
-                if let error = error, user == nil {
-                    let alert = UIAlertController(title: "Sign In Failed", message: error.localizedDescription, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .default))
-                    
-                    //present the alert
-                    self.present(alert, animated: true, completion: nil)
-                }
+            
+        if passwordText!.text?.isEmpty == true
+            {
+            displayMyAlertMessage(userMessage: "Fields cant be blank");
+           return;
+        }
+        login()
+    }
+         
+         
+    func login(){
+             //perform a login with this information
+             Auth.auth().signIn(withEmail: emailText!.text!, password: passwordText!.text!) { (user, error) in
                 
+                 if error == nil {
+                  //  self.performSegue(withIdentifier: "enable", sender: self)
+                    
+                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                     let mainTabBarController = storyboard.instantiateViewController(withIdentifier: "signIn")
+                     
+                     self.navigationController?.pushViewController(mainTabBarController, animated:true)
+                     
+                     self.displayMyAlertMessage(userMessage: "You have logged in successful");
+                 
+                 }
+                 
+                 else{
+                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                     
+                     alertController.addAction(defaultAction)
+                     self.present(alertController, animated: true, completion: nil)
+                 }
+             }
+         }
+    
+            
+    
+    func checkUserInfo()
+        {
+            if Auth.auth().currentUser != nil {
+                print(Auth.auth().currentUser?.uid)
+                let storyboard = UIStoryboard(name: "TabBarController", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+                vc.modalPresentationStyle = .overFullScreen
+                present(vc, animated: true)
             }
-                    self.performSegue(withIdentifier: "signinSuccess", sender: (Any).self)
+            
         }
-        
-        
-        
-        let homeVC = HomeVC()
-        navigationController?.pushViewController(homeVC, animated: true)
-    }*/
-
+    
+    
+    
+    
+   /** @IBAction func FBLogin(_ sender: Any) {
+        //  user = CoredDataHandler.fetchObject()
+          if let token = AccessToken.current,
+             !token.isExpired{
+              let token = token.tokenString
+              
+              let request = FBSDKLoginKit.GraphRequest(graphPath: "me",
+                                                       parameters: ["fields": "email,name"],
+                                                       tokenString: token,
+                                                       version: nil,
+                                                       httpMethod: .get)
+              
+              request.start(completion: {connection, result, error in
+                  print("\(result)")
+              })
+              
+          }
+          else{
+          let loginButton = FBLoginButton()
+                  loginButton.center = view.center
+                 loginButton.delegate = self
+              loginButton.permissions = ["public_profile", "email"]
+                  view.addSubview(loginButton)
+      }
+      }
+      
+      
+     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+          let token = result?.token?.tokenString
+          
+          let request = FBSDKLoginKit.GraphRequest(graphPath: "me",
+                                                   parameters: ["fields": "email,name"],
+                                                   tokenString: token,
+                                                   version: nil,
+                                                   httpMethod: .get)
+          
+          request.start(completion: {connection, result, error in
+              print("\(result)")
+             
+          })
+          checkUserInfo()
         
     }
-}
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        
+    }*/
+    
+    
+    
+    
 
+    
+    func displayMyAlertMessage(userMessage:String)
+    {
+     
+        
+        let myAlert = UIAlertController(title: "Alert", message:userMessage, preferredStyle: UIAlertController.Style.alert);
+        
+    let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler:nil);
+        
+    myAlert.addAction(okAction);
+
+        self.present(myAlert, animated: true, completion:nil);
+        
+    }
+    
+}
 

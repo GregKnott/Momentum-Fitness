@@ -126,32 +126,34 @@ class SignupVC: UIViewController {
         
     }
 
-    @objc func signUpBtnPressed(sender: UIButton!)
+   @objc func signUpBtnPressed(sender: UIButton!)
     {
         
         //If fields are left blank do not let the user continue
         if (passwordText!.text == "" || emailText!.text == "" || nameText!.text == ""){
             //Update error text with message
-            errorText!.text = "Fields cannot be left blank"
-            //Show error text
-            errorText!.isHidden = false
+            displayMyAlertMessage(userMessage: "Fields cant be blank");
+           return;
         }
         else if (confirmPassword!.text != passwordText!.text){
-            errorText!.text = "Passwords do not match"
-            errorText!.isHidden = false
+            displayMyAlertMessage(userMessage: "Password do not match");
+           return;
         }
         else{
             Auth.auth().createUser( withEmail: emailText!.text!, password: passwordText!.text!) { user, error in
                 if error == nil {
                     Auth.auth().signIn(withEmail: self.emailText!.text!, password: self.passwordText!.text!)
+                    
+                    self.displayMyAlertMessage(userMessage: "You have registered successful");
                 }
             }
         }
         
        
-        let GoalVC = GoalVC()
-        navigationController?.pushViewController(GoalVC, animated: true)
-        return;
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let goalVC = storyboard.instantiateViewController(withIdentifier: "GoalVC")
+        
+        self.navigationController?.pushViewController(goalVC, animated:true)
     
     }
     
