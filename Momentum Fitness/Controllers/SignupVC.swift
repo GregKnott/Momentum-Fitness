@@ -11,6 +11,8 @@ import GoogleSignIn
 
 
 class SignupVC: UIViewController {
+    private let database = Database.database().reference()
+    
     var signuplabel: UILabel?
     var nameText: UITextField?
     var errorText: UITextField?
@@ -143,6 +145,13 @@ class SignupVC: UIViewController {
             Auth.auth().createUser( withEmail: emailText!.text!, password: passwordText!.text!) { user, error in
                 if error == nil {
                     Auth.auth().signIn(withEmail: self.emailText!.text!, password: self.passwordText!.text!)
+                    
+                    let object: [String: Any] = [
+                        "Workout": "Bench Press" as NSObject,
+                        "routine": "Chest day"
+                        
+                    ]
+                    self.database.child("userId").setValue(object)
                     
                     self.displayMyAlertMessage(userMessage: "You have registered successful");
                 }
