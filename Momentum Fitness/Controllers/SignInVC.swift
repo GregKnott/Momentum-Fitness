@@ -10,8 +10,8 @@ import Firebase
 
 class SignInVC: UIViewController {
     var signInlabel: UILabel?
-    var emailText : UITextField?
-    var passwordText  : UITextField?
+    var emailText : ShakingTextField?
+    var passwordText  : ShakingTextField?
     var errortext : UITextField?
 
     @IBOutlet var signInButton : UIButton?
@@ -40,7 +40,7 @@ class SignInVC: UIViewController {
         
         
         //this emailtext for this VC
-        emailText = UITextField(frame: CGRect(x:50, y: 300, width: 320.00, height: 50.00));
+        emailText = ShakingTextField(frame: CGRect(x:50, y: 300, width: 320.00, height: 50.00));
         self.view.addSubview(emailText!)
         
         //emailText!.center = self.view.center
@@ -60,7 +60,7 @@ class SignInVC: UIViewController {
         
         
         //this passwordText for this VC
-        passwordText = UITextField(frame: CGRect(x:50, y: 400, width: 320.00, height: 50.00));
+        passwordText = ShakingTextField(frame: CGRect(x:50, y: 400, width: 320.00, height: 50.00));
         self.view.addSubview(passwordText!)
         
        // passwordText!.center = self.view.center
@@ -97,6 +97,8 @@ class SignInVC: UIViewController {
     
     @objc func signInBtnPressed(sender: UIButton!)
     {
+        emailText?.shake()
+        passwordText?.shake()
       validateFields()
     
     }

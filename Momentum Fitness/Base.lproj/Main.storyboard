@@ -678,7 +678,7 @@ of training)</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NrT-HD-oSA">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NrT-HD-oSA" customClass="ShakingTextField" customModule="Momentum_Fitness" customModuleProvider="target">
                                         <rect key="frame" x="8" y="72.666666666666686" width="310" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
@@ -689,7 +689,7 @@ of training)</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dfo-kh-5Pz">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dfo-kh-5Pz" customClass="ShakingTextField" customModule="Momentum_Fitness" customModuleProvider="target">
                                         <rect key="frame" x="8" y="192" width="310" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
@@ -1128,39 +1128,39 @@ of training)</string>
         <!--Great JobVC-->
         <scene sceneID="AQE-As-ZvU">
             <objects>
-                <viewController id="9Sy-GL-cRC" customClass="GreatJobVC" customModule="Momentum_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="greatJob" id="9Sy-GL-cRC" customClass="GreatJobVC" customModule="Momentum_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RQM-v7-Aqv">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIs-7Y-yYn">
-                                <rect key="frame" x="-14.666666666666657" y="623" width="419.33333333333326" height="200"/>
+                                <rect key="frame" x="-14.666666666666657" y="650" width="419.33333333333326" height="200"/>
                                 <state key="normal" image="btnHome"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="6TU-4b-bXS">
-                                <rect key="frame" x="113.66666666666669" y="162" width="163" height="163"/>
+                                <rect key="frame" x="113.66666666666669" y="189" width="163" height="163"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great job!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIs-44-Dd8">
-                                <rect key="frame" x="76.666666666666686" y="396" width="237" height="60"/>
+                                <rect key="frame" x="76.666666666666686" y="423" width="237" height="60"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Message]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfz-uz-9kz">
-                                <rect key="frame" x="137.66666666666666" y="478" width="115" height="30"/>
+                                <rect key="frame" x="137.66666666666666" y="505" width="115" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Duration: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZO-J1-muK">
-                                <rect key="frame" x="85" y="536" width="143" height="21"/>
+                                <rect key="frame" x="85" y="563" width="143" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzE-nE-u9Z">
-                                <rect key="frame" x="236" y="536" width="71" height="21"/>
+                                <rect key="frame" x="236" y="563" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1187,7 +1187,7 @@ of training)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="340-ZQ-Gxy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9242" y="-2185"/>
+            <point key="canvasLocation" x="9757" y="-2036"/>
         </scene>
         <!--Routine Details-->
         <scene sceneID="K3E-3L-yH3">
@@ -1260,10 +1260,6 @@ of training)</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SignInbg" translatesAutoresizingMaskIntoConstraints="NO" id="K7m-9O-hFn">
-                                <rect key="frame" x="0.0" y="307" width="364" height="334"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84L-UO-Rtw">
                                 <rect key="frame" x="-14.666666666666657" y="606" width="419.66666666666663" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1289,11 +1285,18 @@ of training)</string>
                                 <rect key="frame" x="45" y="140" width="307" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SignInbg" translatesAutoresizingMaskIntoConstraints="NO" id="K7m-9O-hFn">
+                                <rect key="frame" x="26" y="307" width="364" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k7G-Ul-ULA"/>
                         <color key="backgroundColor" name="Theme"/>
                     </view>
                     <navigationItem key="navigationItem" id="rhW-Qp-kY8"/>
+                    <connections>
+                        <outlet property="startButton" destination="84L-UO-Rtw" id="L2s-qO-rMZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3QM-2d-0tc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1308,41 +1311,58 @@ of training)</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="184-ha-XHx">
-                                <rect key="frame" x="67.333333333333343" y="73" width="256.33333333333326" height="36"/>
+                                <rect key="frame" x="67" y="20" width="256" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bj-On-jgr">
-                                <rect key="frame" x="127" y="377" width="137" height="36"/>
+                                <rect key="frame" x="127" y="309" width="137" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05z-Rb-h0J">
-                                <rect key="frame" x="-14" y="605" width="419" height="200"/>
+                                <rect key="frame" x="-14" y="514" width="419" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="btnReset"/>
+                                <connections>
+                                    <action selector="stopButtonClick:" destination="eWL-Gb-0LL" eventType="touchUpInside" id="tFX-ka-Bol"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjU-Kg-2J5">
-                                <rect key="frame" x="-14" y="526" width="419" height="200"/>
+                                <rect key="frame" x="-14" y="353" width="419" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="btnPause"/>
+                                <state key="normal" backgroundImage="btnStartTImer"/>
                                 <connections>
-                                    <segue destination="9Sy-GL-cRC" kind="show" id="4Ir-gb-QxZ"/>
+                                    <action selector="startButtonClick:" destination="eWL-Gb-0LL" eventType="touchUpInside" id="W4t-Vr-f6l"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NoPath - Copy (2)" translatesAutoresizingMaskIntoConstraints="NO" id="cy3-M8-UPk">
-                                <rect key="frame" x="31" y="162" width="328" height="175"/>
+                                <rect key="frame" x="31" y="102" width="328" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3D-q5-7tP">
+                                <rect key="frame" x="-14" y="695" width="486" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="btnWorkoutComplete" title="Button"/>
+                                <connections>
+                                    <action selector="completeButtonClick:" destination="eWL-Gb-0LL" eventType="touchUpInside" id="uCK-D2-6sB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Njl-Sb-v6x"/>
                         <color key="backgroundColor" name="Theme"/>
                     </view>
                     <navigationItem key="navigationItem" id="VHx-Ir-tcc"/>
+                    <connections>
+                        <outlet property="startButton" destination="NjU-Kg-2J5" id="0kD-xb-gjn"/>
+                        <outlet property="stopButton" destination="05z-Rb-h0J" id="vIb-Pf-lO0"/>
+                        <outlet property="timerLabel" destination="7bj-On-jgr" id="JrN-1C-myc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2p8-Cs-mB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1605,10 +1625,10 @@ of training)</string>
         <image name="btnGetStarted" width="419" height="200"/>
         <image name="btnHome" width="419" height="200"/>
         <image name="btnNext" width="328" height="200"/>
-        <image name="btnPause" width="419" height="200"/>
         <image name="btnReset" width="419" height="200"/>
         <image name="btnSave" width="419" height="200"/>
         <image name="btnStartTImer" width="419" height="200"/>
+        <image name="btnWorkoutComplete" width="419" height="200"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="98"/>
         <image name="checkmark" width="162.66667175292969" height="162.66667175292969"/>
         <image name="gear" catalog="system" width="128" height="119"/>

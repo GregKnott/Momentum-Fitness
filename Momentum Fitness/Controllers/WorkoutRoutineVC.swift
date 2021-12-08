@@ -19,8 +19,9 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var tableView: UITableView!
     
     var ref: DatabaseReference?
+    var databaseHandle: DatabaseHandle = 0
     
-    let myData = ["footExcercise"/**, "running", "benchpress"*/]
+    let myData = ["footExcercise", "running", "benchpress", "benchpress"]
     var post = [postStruct]()
     
     
@@ -50,18 +51,22 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
      
     struct postStruct {
-      //let workout : String!
-      let routine : String!
+       let routine : String!
+        let routine1 : String!
+        let routine2 : String!
+        let routine3 : String!
+        
     }
      
     func getPosts() {
         let databaseRef = Database.database().reference()
-      databaseRef.child("workoutV").queryOrderedByKey().observeSingleEvent(of: .childAdded, with: {
+        databaseRef.child("workout").queryOrderedByKey().observeSingleEvent(of: .childAdded, with: {
             snapshot in
-            let workout = (snapshot.value as? NSDictionary)!["workout"] as? String
-            let routine = (snapshot.value as? NSDictionary
-              )!["routine"] as? String
-            self.post.append(postStruct(routine: routine))
+            let routine = (snapshot.value as? NSDictionary)!["routine"]
+            let routine1 = (snapshot.value as? NSDictionary)!["routine1"]
+            let routine2 = (snapshot.value as? NSDictionary)!["routine2"]
+            let routine3 = (snapshot.value as? NSDictionary)!["routine3"]
+            self.post.append(postStruct(routine: routine as? String, routine1: routine1 as? String, routine2: routine2 as? String, routine3: routine3 as? String))
             DispatchQueue.main.async {
               self.tableView.reloadData()
             }
@@ -79,6 +84,9 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         
         cell.workoutRoutine?.text = post[indexPath.row].routine
+        //cell.workoutRoutine?.text = post[indexPath.row].routine1
+      //cell.workoutRoutine?.text = post[indexPath.row].routine2
+      // cell.workoutRoutine?.text = post[indexPath.row].routine3
         cell.workoutImage?.image  = UIImage(named: myData[indexPath.row])
 
         return cell

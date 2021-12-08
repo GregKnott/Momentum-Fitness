@@ -31,6 +31,7 @@
 		874C1187AA8AAD22978AF40D /* Pods_Momentum_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */; };
 		C7009D0127573F750025BB6A /* Workout_routine_tableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009CFF27573F740025BB6A /* Workout_routine_tableViewTableViewCell.swift */; };
 		C7009D0227573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7009D0027573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib */; };
+		C78AE3C7276152E8003B0E62 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AE3C6276152E8003B0E62 /* ShakingTextField.swift */; };
 		C9A176FB2617CD2500C72952 /* WorkoutRoutineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */; };
 		C9A177002617D56F00C72952 /* NewWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */; };
 		C9A177052617E39200C72952 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A177042617E39200C72952 /* UserProfileVC.swift */; };
@@ -100,6 +101,7 @@
 		AA202FE910E771CC186C28EE /* Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; path = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7009CFF27573F740025BB6A /* Workout_routine_tableViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_routine_tableViewTableViewCell.swift; sourceTree = "<group>"; };
 		C7009D0027573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Workout_routine_tableViewTableViewCell.xib; sourceTree = "<group>"; };
+		C78AE3C6276152E8003B0E62 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
 		C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRoutineVC.swift; sourceTree = "<group>"; };
 		C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutVC.swift; sourceTree = "<group>"; };
 		C9A177042617E39200C72952 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				37F46F9D262F3201003526E1 /* RoutineDetails.swift */,
 				C9ACA9822752BBD400BCEF28 /* TImeTargetVC.swift */,
 				C9ACA9872752BD2C00BCEF28 /* TImerVC.swift */,
+				C78AE3C6276152E8003B0E62 /* ShakingTextField.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				C9DA6CB82629E6CC00524BA8 /* NewWorkoutDataSource.swift in Sources */,
 				375E2A9C2617497900E1CFCA /* AppDelegate.swift in Sources */,
 				379EE9032617A34D00A9B007 /* WeightHeightVC.swift in Sources */,
+				C78AE3C7276152E8003B0E62 /* ShakingTextField.swift in Sources */,
 				375E2AA62617497900E1CFCA /* Momentum_Fitness.xcdatamodeld in Sources */,
 				C9DA6CBD2629E6EA00524BA8 /* RoutineDataSource.swift in Sources */,
 				C9A177002617D56F00C72952 /* NewWorkoutVC.swift in Sources */,
