@@ -123,6 +123,9 @@ class SignInVC: UIViewController {
              Auth.auth().signIn(withEmail: emailText!.text!, password: passwordText!.text!) { (user, error) in
                 
                  if error == nil {
+                     
+                     
+                     
                   //  self.performSegue(withIdentifier: "enable", sender: self)
                     
                      let storyboard = UIStoryboard(name: "Main", bundle: nil)

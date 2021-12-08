@@ -29,6 +29,8 @@
 		37F46F9E262F3201003526E1 /* RoutineDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F46F9D262F3201003526E1 /* RoutineDetails.swift */; };
 		6FBC691571881DD5D4A1DA19 /* Pods_Momentum_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86AA053863FDE218E2A88A /* Pods_Momentum_Fitness.framework */; };
 		874C1187AA8AAD22978AF40D /* Pods_Momentum_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */; };
+		C7009D0127573F750025BB6A /* Workout_routine_tableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009CFF27573F740025BB6A /* Workout_routine_tableViewTableViewCell.swift */; };
+		C7009D0227573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7009D0027573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib */; };
 		C9A176FB2617CD2500C72952 /* WorkoutRoutineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */; };
 		C9A177002617D56F00C72952 /* NewWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */; };
 		C9A177052617E39200C72952 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A177042617E39200C72952 /* UserProfileVC.swift */; };
@@ -42,7 +44,6 @@
 		C9DA6CBD2629E6EA00524BA8 /* RoutineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CBC2629E6EA00524BA8 /* RoutineDataSource.swift */; };
 		C9DA6CCB2629F89500524BA8 /* NewWorkoutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CCA2629F89500524BA8 /* NewWorkoutTableView.swift */; };
 		C9DA6CD3262A199600524BA8 /* ActivityTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CD2262A199600524BA8 /* ActivityTableVC.swift */; };
-		C9DA6CEA262A5C9600524BA8 /* WorkoutRoutineTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CE9262A5C9600524BA8 /* WorkoutRoutineTableView.swift */; };
 		C9DA6CEF262A60F600524BA8 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA6CEE262A60F600524BA8 /* Workout.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,8 @@
 		60136A434DA4079D4A2229E7 /* Pods-Momentum FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Momentum_FitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA202FE910E771CC186C28EE /* Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; path = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7009CFF27573F740025BB6A /* Workout_routine_tableViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_routine_tableViewTableViewCell.swift; sourceTree = "<group>"; };
+		C7009D0027573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Workout_routine_tableViewTableViewCell.xib; sourceTree = "<group>"; };
 		C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRoutineVC.swift; sourceTree = "<group>"; };
 		C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutVC.swift; sourceTree = "<group>"; };
 		C9A177042617E39200C72952 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
@@ -110,7 +113,6 @@
 		C9DA6CBC2629E6EA00524BA8 /* RoutineDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDataSource.swift; sourceTree = "<group>"; };
 		C9DA6CCA2629F89500524BA8 /* NewWorkoutTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutTableView.swift; sourceTree = "<group>"; };
 		C9DA6CD2262A199600524BA8 /* ActivityTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableVC.swift; sourceTree = "<group>"; };
-		C9DA6CE9262A5C9600524BA8 /* WorkoutRoutineTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutRoutineTableView.swift; path = "Momentum Fitness/Controllers/WorkoutRoutineTableView.swift"; sourceTree = SOURCE_ROOT; };
 		C9DA6CEE262A60F600524BA8 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		CE86AA053863FDE218E2A88A /* Pods_Momentum_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Momentum_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF19EF58E4F677342688565F /* Pods-Momentum FitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum FitnessTests.release.xcconfig"; path = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,8 +217,9 @@
 				379EE9022617A34D00A9B007 /* WeightHeightVC.swift */,
 				379EE9072617A4AA00A9B007 /* GoalVC.swift */,
 				379EE90C2617A4D400A9B007 /* FitnessLevelVC.swift */,
-				C9DA6CE9262A5C9600524BA8 /* WorkoutRoutineTableView.swift */,
 				379EE9112617A4F700A9B007 /* GenderVC.swift */,
+				C7009CFF27573F740025BB6A /* Workout_routine_tableViewTableViewCell.swift */,
+				C7009D0027573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib */,
 				C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */,
 				C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */,
 				C9A177042617E39200C72952 /* UserProfileVC.swift */,
@@ -390,6 +393,7 @@
 			files = (
 				375E2AAB2617497A00E1CFCA /* LaunchScreen.storyboard in Resources */,
 				3705A99727518C6200181433 /* GoogleService-Info.plist in Resources */,
+				C7009D0227573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib in Resources */,
 				375E2AA82617497A00E1CFCA /* Assets.xcassets in Resources */,
 				375E2AA32617497900E1CFCA /* Main.storyboard in Resources */,
 			);
@@ -535,6 +539,7 @@
 				C9DA6CAA2629E55900524BA8 /* ActivityTableViewCell.swift in Sources */,
 				375E2AA02617497900E1CFCA /* ViewController.swift in Sources */,
 				375E2AE32617819800E1CFCA /* SignInVC.swift in Sources */,
+				C7009D0127573F750025BB6A /* Workout_routine_tableViewTableViewCell.swift in Sources */,
 				C9DA6CCB2629F89500524BA8 /* NewWorkoutTableView.swift in Sources */,
 				C9A177052617E39200C72952 /* UserProfileVC.swift in Sources */,
 				C9DA6CB82629E6CC00524BA8 /* NewWorkoutDataSource.swift in Sources */,
@@ -542,7 +547,6 @@
 				379EE9032617A34D00A9B007 /* WeightHeightVC.swift in Sources */,
 				375E2AA62617497900E1CFCA /* Momentum_Fitness.xcdatamodeld in Sources */,
 				C9DA6CBD2629E6EA00524BA8 /* RoutineDataSource.swift in Sources */,
-				C9DA6CEA262A5C9600524BA8 /* WorkoutRoutineTableView.swift in Sources */,
 				C9A177002617D56F00C72952 /* NewWorkoutVC.swift in Sources */,
 				375E2A9E2617497900E1CFCA /* SceneDelegate.swift in Sources */,
 				C9DA6CEF262A60F600524BA8 /* Workout.swift in Sources */,
