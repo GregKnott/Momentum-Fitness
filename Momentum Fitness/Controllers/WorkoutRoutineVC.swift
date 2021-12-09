@@ -22,7 +22,8 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     var databaseHandle: DatabaseHandle = 0
     
     let myData = ["footExcercise", "running", "benchpress", "benchpress"]
-    var post = [postStruct]()
+    let myData1 = ["Chest day", "Leg Press", "Strength Training", "Running"]
+    //var post = [postStruct]()
     
     
     override func viewDidLoad() {
@@ -37,7 +38,7 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableView.dataSource = self
         
         getUsersData()
-            getPosts()
+            //getPosts()
     }
     
     
@@ -58,7 +59,7 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         
     }
      
-    func getPosts() {
+  /**  func getPosts() {
         let databaseRef = Database.database().reference()
         databaseRef.child("workout").queryOrderedByKey().observeSingleEvent(of: .childAdded, with: {
             snapshot in
@@ -71,11 +72,11 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
               self.tableView.reloadData()
             }
           })
-    }
+    }*/
         
         
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return post.count
+        return myData1.count
     }
 
         
@@ -83,10 +84,7 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! Workout_routine_tableViewTableViewCell
         
         
-        cell.workoutRoutine?.text = post[indexPath.row].routine
-        //cell.workoutRoutine?.text = post[indexPath.row].routine1
-      //cell.workoutRoutine?.text = post[indexPath.row].routine2
-      // cell.workoutRoutine?.text = post[indexPath.row].routine3
+        cell.workoutRoutine?.text = myData1[indexPath.row]
         cell.workoutImage?.image  = UIImage(named: myData[indexPath.row])
 
         return cell
@@ -105,7 +103,6 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "Routinedetails") as? RoutineDetails
         self.navigationController?.pushViewController(vc!, animated: true)
-     
     }
 
 }
