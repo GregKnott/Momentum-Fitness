@@ -32,6 +32,7 @@
 		C7009D0127573F750025BB6A /* Workout_routine_tableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009CFF27573F740025BB6A /* Workout_routine_tableViewTableViewCell.swift */; };
 		C7009D0227573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7009D0027573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib */; };
 		C78AE3C7276152E8003B0E62 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AE3C6276152E8003B0E62 /* ShakingTextField.swift */; };
+		C78AE3C9276180EE003B0E62 /* PulsingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AE3C8276180ED003B0E62 /* PulsingAnimation.swift */; };
 		C9A176FB2617CD2500C72952 /* WorkoutRoutineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */; };
 		C9A177002617D56F00C72952 /* NewWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */; };
 		C9A177052617E39200C72952 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A177042617E39200C72952 /* UserProfileVC.swift */; };
@@ -102,6 +103,7 @@
 		C7009CFF27573F740025BB6A /* Workout_routine_tableViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_routine_tableViewTableViewCell.swift; sourceTree = "<group>"; };
 		C7009D0027573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Workout_routine_tableViewTableViewCell.xib; sourceTree = "<group>"; };
 		C78AE3C6276152E8003B0E62 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
+		C78AE3C8276180ED003B0E62 /* PulsingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingAnimation.swift; sourceTree = "<group>"; };
 		C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRoutineVC.swift; sourceTree = "<group>"; };
 		C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutVC.swift; sourceTree = "<group>"; };
 		C9A177042617E39200C72952 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				C9ACA9822752BBD400BCEF28 /* TImeTargetVC.swift */,
 				C9ACA9872752BD2C00BCEF28 /* TImerVC.swift */,
 				C78AE3C6276152E8003B0E62 /* ShakingTextField.swift */,
+				C78AE3C8276180ED003B0E62 /* PulsingAnimation.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				C9ACA9882752BD2C00BCEF28 /* TImerVC.swift in Sources */,
 				379EE8FE2617974400A9B007 /* HomeVC.swift in Sources */,
 				375E2AEB2617852100E1CFCA /* SignupVC.swift in Sources */,
+				C78AE3C9276180EE003B0E62 /* PulsingAnimation.swift in Sources */,
 				C9DA6CAA2629E55900524BA8 /* ActivityTableViewCell.swift in Sources */,
 				375E2AA02617497900E1CFCA /* ViewController.swift in Sources */,
 				375E2AE32617819800E1CFCA /* SignInVC.swift in Sources */,

@@ -97,8 +97,11 @@ class SignInVC: UIViewController {
     
     @objc func signInBtnPressed(sender: UIButton!)
     {
-        emailText?.shake()
-        passwordText?.shake()
+        let pulse = PulsingAnimation(numberOfPulses: 4, radius: 200, position: sender.center)
+        pulse.animationDuration = 1.0
+        pulse.backgroundColor = UIColor.blue.cgColor
+        self.view.layer.insertSublayer(pulse, below: self.view.layer)
+        
       validateFields()
     
     }
@@ -107,13 +110,23 @@ class SignInVC: UIViewController {
     func validateFields(){
         if emailText!.text?.isEmpty == true
         {
+    
+           
+            
+            //Display an alert if field is blank
             displayMyAlertMessage(userMessage: "Fields cant be blank");
+            emailText?.shake()
+            passwordText?.shake()
            return;
         }
             
         if passwordText!.text?.isEmpty == true
             {
+            
+            //disply a alert if field is blank.
             displayMyAlertMessage(userMessage: "Fields cant be blank");
+            emailText?.shake()
+            passwordText?.shake()
            return;
         }
         login()
@@ -140,6 +153,8 @@ class SignInVC: UIViewController {
                  }
                  
                  else{
+                     self.emailText?.shake()
+                     self.passwordText?.shake()
                      let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                      let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                      

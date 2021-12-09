@@ -14,11 +14,11 @@ class SignupVC: UIViewController {
     private let database = Database.database().reference()
     
     var signuplabel: UILabel?
-    var nameText: UITextField?
+    var nameText: ShakingTextField?
     var errorText: UITextField?
-    var emailText : UITextField?
-    var passwordText : UITextField?
-    var confirmPassword :  UITextField?
+    var emailText : ShakingTextField?
+    var passwordText : ShakingTextField?
+    var confirmPassword :  ShakingTextField?
     var signupBtn: UIButton?
     
     
@@ -37,7 +37,7 @@ class SignupVC: UIViewController {
     
         
         
-        nameText = UITextField(frame: CGRect(x:50, y: 200, width: 320.00, height: 50.00));
+        nameText = ShakingTextField(frame: CGRect(x:50, y: 200, width: 320.00, height: 50.00));
         self.view.addSubview(nameText!)
         nameText!.placeholder = "Name"
         nameText?.borderStyle = UITextField.BorderStyle.line
@@ -45,7 +45,7 @@ class SignupVC: UIViewController {
 
         
         
-        emailText = UITextField(frame: CGRect(x:50, y: 300, width: 320.00, height: 50.00));
+        emailText = ShakingTextField(frame: CGRect(x:50, y: 300, width: 320.00, height: 50.00));
         self.view.addSubview(emailText!)
         
        // passwordText!.center = self.view.center
@@ -65,7 +65,7 @@ class SignupVC: UIViewController {
         
         
         //this passwordText for this VC
-        passwordText = UITextField(frame: CGRect(x:50, y: 400, width: 320.00, height: 50.00));
+        passwordText = ShakingTextField(frame: CGRect(x:50, y: 400, width: 320.00, height: 50.00));
         self.view.addSubview(passwordText!)
         
        // passwordText!.center = self.view.center
@@ -89,7 +89,7 @@ class SignupVC: UIViewController {
 
         
         //this passwordText for this VC
-        confirmPassword = UITextField(frame: CGRect(x:50, y: 500, width: 320.00, height: 50.00));
+        confirmPassword = ShakingTextField(frame: CGRect(x:50, y: 500, width: 320.00, height: 50.00));
         self.view.addSubview(confirmPassword!)
         
        // passwordText!.center = self.view.center
@@ -130,14 +130,25 @@ class SignupVC: UIViewController {
 
    @objc func signUpBtnPressed(sender: UIButton!)
     {
+        let pulse = PulsingAnimation(numberOfPulses: 4, radius: 200, position: sender.center)
+        pulse.animationDuration = 1.0
+        pulse.backgroundColor = UIColor.blue.cgColor
+        self.view.layer.insertSublayer(pulse, below: self.view.layer)
         
         //If fields are left blank do not let the user continue
         if (passwordText!.text == "" || emailText!.text == "" || nameText!.text == ""){
             //Update error text with message
+            
+            nameText?.shake()
+            emailText?.shake()
+            passwordText?.shake()
+            confirmPassword?.shake()
             displayMyAlertMessage(userMessage: "Fields cant be blank");
            return;
         }
         else if (confirmPassword!.text != passwordText!.text){
+            passwordText?.shake()
+            confirmPassword?.shake()
             displayMyAlertMessage(userMessage: "Password do not match");
            return;
         }
