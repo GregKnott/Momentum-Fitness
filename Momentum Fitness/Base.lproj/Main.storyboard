@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u1I-ka-lkE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2pK-rm-vrm">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -840,35 +840,86 @@ of training)</string>
         <!--Map-->
         <scene sceneID="nAZ-bm-mDz">
             <objects>
-                <viewController id="pQS-nP-A6O" sceneMemberID="viewController">
+                <viewController id="pQS-nP-A6O" customClass="MapViewController" customModule="Momentum_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NPF-v7-4H7">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zih-9K-fkg">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zih-9K-fkg">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="263"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZPI-fG-389">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZPI-fG-389">
                                 <rect key="frame" x="16" y="288" width="358" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Gyms"/>
                                     <segment title="Supplements"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeSearch:" destination="pQS-nP-A6O" eventType="valueChanged" id="k03-rz-HXd"/>
+                                </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gyms Near You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xy2-U6-erx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gyms Near You" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xy2-U6-erx">
                                 <rect key="frame" x="118" y="355" width="154" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CWe-ed-OrZ">
+                                <rect key="frame" x="32" y="421" width="326" height="302"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapViewCell" id="Viv-9D-btO" customClass="MapViewCell" customModule="Momentum_Fitness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="326" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Viv-9D-btO" id="w3r-Qu-7vL">
+                                            <rect key="frame" x="0.0" y="0.0" width="326" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZH-BG-hDr">
+                                                    <rect key="frame" x="20" y="11" width="286" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RZH-BG-hDr" firstAttribute="centerX" secondItem="w3r-Qu-7vL" secondAttribute="centerX" id="AKd-Sl-pss"/>
+                                                <constraint firstItem="RZH-BG-hDr" firstAttribute="centerY" secondItem="w3r-Qu-7vL" secondAttribute="centerY" id="Ef7-5a-jLx"/>
+                                                <constraint firstItem="RZH-BG-hDr" firstAttribute="top" secondItem="w3r-Qu-7vL" secondAttribute="topMargin" id="cWQ-pn-U4I"/>
+                                                <constraint firstItem="RZH-BG-hDr" firstAttribute="leading" secondItem="w3r-Qu-7vL" secondAttribute="leading" constant="20" symbolic="YES" id="gq6-Ev-xLt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mapItemName" destination="RZH-BG-hDr" id="gwU-5a-4gB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cRq-Xo-roP"/>
                         <color key="backgroundColor" name="Theme"/>
+                        <constraints>
+                            <constraint firstItem="CWe-ed-OrZ" firstAttribute="top" secondItem="xy2-U6-erx" secondAttribute="bottom" constant="38" id="Bmk-sH-xJr"/>
+                            <constraint firstItem="cRq-Xo-roP" firstAttribute="bottom" secondItem="CWe-ed-OrZ" secondAttribute="bottom" constant="38" id="F2f-ip-kVm"/>
+                            <constraint firstItem="cRq-Xo-roP" firstAttribute="bottom" secondItem="zih-9K-fkg" secondAttribute="bottom" constant="498" id="Ktb-Lg-6k5"/>
+                            <constraint firstItem="xy2-U6-erx" firstAttribute="top" secondItem="ZPI-fG-389" secondAttribute="bottom" constant="36" id="QXz-fZ-0Fm"/>
+                            <constraint firstItem="cRq-Xo-roP" firstAttribute="trailing" secondItem="zih-9K-fkg" secondAttribute="trailing" id="Tw2-tA-RTp"/>
+                            <constraint firstItem="cRq-Xo-roP" firstAttribute="trailing" secondItem="CWe-ed-OrZ" secondAttribute="trailing" constant="32" id="Xhc-Ud-NeS"/>
+                            <constraint firstItem="ZPI-fG-389" firstAttribute="top" secondItem="zih-9K-fkg" secondAttribute="bottom" constant="25" id="dOU-hC-GIA"/>
+                            <constraint firstItem="cRq-Xo-roP" firstAttribute="trailing" secondItem="ZPI-fG-389" secondAttribute="trailing" constant="16" id="kRy-HL-pBx"/>
+                            <constraint firstItem="xy2-U6-erx" firstAttribute="centerX" secondItem="cRq-Xo-roP" secondAttribute="centerX" id="w6b-Ul-hhl"/>
+                            <constraint firstItem="CWe-ed-OrZ" firstAttribute="leading" secondItem="cRq-Xo-roP" secondAttribute="leading" constant="32" id="wOB-4S-emo"/>
+                            <constraint firstItem="ZPI-fG-389" firstAttribute="leading" secondItem="cRq-Xo-roP" secondAttribute="leading" constant="16" id="xfa-hD-cIk"/>
+                            <constraint firstItem="cRq-Xo-roP" firstAttribute="top" secondItem="zih-9K-fkg" secondAttribute="top" constant="44" id="z6l-pb-dos"/>
+                            <constraint firstItem="zih-9K-fkg" firstAttribute="leading" secondItem="cRq-Xo-roP" secondAttribute="leading" id="zBl-sC-Jo5"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map.fill" catalog="system" selectedImage="map.fill" id="Bzc-SD-aKg"/>
+                    <connections>
+                        <outlet property="mapView" destination="zih-9K-fkg" id="R1E-Kz-zJK"/>
+                        <outlet property="tableView" destination="CWe-ed-OrZ" id="9dF-D3-8yH"/>
+                        <outlet property="titleLabel" destination="xy2-U6-erx" id="JGB-aY-1Xq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8S-qY-MTb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

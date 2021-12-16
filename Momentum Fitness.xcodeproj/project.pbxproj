@@ -26,6 +26,8 @@
 		379EE9082617A4AA00A9B007 /* GoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE9072617A4AA00A9B007 /* GoalVC.swift */; };
 		379EE90D2617A4D400A9B007 /* FitnessLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE90C2617A4D400A9B007 /* FitnessLevelVC.swift */; };
 		379EE9122617A4F700A9B007 /* GenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EE9112617A4F700A9B007 /* GenderVC.swift */; };
+		37B61A46276AB1F800BAA9EB /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B61A45276AB1F800BAA9EB /* MapViewCell.swift */; };
+		37C07A0D2762936A00BC68C8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C07A0C2762936A00BC68C8 /* MapViewController.swift */; };
 		37F46F9E262F3201003526E1 /* RoutineDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F46F9D262F3201003526E1 /* RoutineDetails.swift */; };
 		6FBC691571881DD5D4A1DA19 /* Pods_Momentum_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86AA053863FDE218E2A88A /* Pods_Momentum_Fitness.framework */; };
 		874C1187AA8AAD22978AF40D /* Pods_Momentum_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */; };
@@ -96,6 +98,8 @@
 		379EE9072617A4AA00A9B007 /* GoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalVC.swift; sourceTree = "<group>"; };
 		379EE90C2617A4D400A9B007 /* FitnessLevelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessLevelVC.swift; sourceTree = "<group>"; };
 		379EE9112617A4F700A9B007 /* GenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderVC.swift; sourceTree = "<group>"; };
+		37B61A45276AB1F800BAA9EB /* MapViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCell.swift; sourceTree = "<group>"; };
+		37C07A0C2762936A00BC68C8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		37F46F9D262F3201003526E1 /* RoutineDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetails.swift; sourceTree = "<group>"; };
 		60136A434DA4079D4A2229E7 /* Pods-Momentum FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-Momentum FitnessTests/Pods-Momentum FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Momentum_FitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +239,7 @@
 				C9ACA9872752BD2C00BCEF28 /* TImerVC.swift */,
 				C78AE3C6276152E8003B0E62 /* ShakingTextField.swift */,
 				C78AE3C8276180ED003B0E62 /* PulsingAnimation.swift */,
+				37C07A0C2762936A00BC68C8 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			children = (
 				C9DA6CA92629E55900524BA8 /* ActivityTableViewCell.swift */,
 				C9DA6CB12629E58400524BA8 /* WorkoutTableViewCell.swift */,
+				37B61A45276AB1F800BAA9EB /* MapViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -529,10 +535,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C07A0D2762936A00BC68C8 /* MapViewController.swift in Sources */,
 				C9DA6CA32629E34700524BA8 /* Activity.swift in Sources */,
 				37F46F9E262F3201003526E1 /* RoutineDetails.swift in Sources */,
 				C9ACA9832752BBD400BCEF28 /* TImeTargetVC.swift in Sources */,
 				379EE90D2617A4D400A9B007 /* FitnessLevelVC.swift in Sources */,
+				37B61A46276AB1F800BAA9EB /* MapViewCell.swift in Sources */,
 				375E2AD326177A2800E1CFCA /* AccountNavigationVC.swift in Sources */,
 				C9A1770A2617E9F300C72952 /* GreatJobVC.swift in Sources */,
 				C9A176FB2617CD2500C72952 /* WorkoutRoutineVC.swift in Sources */,
