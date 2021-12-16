@@ -83,15 +83,12 @@ class MapViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         self.pointAnnotation = MKPointAnnotation()
         
         //Set pin display text
-        self.pointAnnotation?.title = self.results[0].name
+        self.pointAnnotation?.title = mapItem.name
         
         //Set pin coordinates to search response coordinates
         self.pointAnnotation?.coordinate = CLLocationCoordinate2D(latitude: (mapItem.placemark.location?.coordinate.latitude)!, longitude: (mapItem.placemark.location?.coordinate.longitude)!)
-        
-//        self.pointAnnotation?.coordinate = CLLocationCoordinate2D(latitude:localSearchResponse!.boundingRegion.center.latitude, longitude: localSearchResponse!.boundingRegion.center.longitude)
 
         mapItem.placemark.location?.coordinate.latitude
-        
         
         self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: nil)
         
