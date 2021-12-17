@@ -21,7 +21,9 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     var ref: DatabaseReference?
     var databaseHandle: DatabaseHandle = 0
     
-    let myData = ["footExcercise", "running", "benchpress", "benchpress"]
+    var name = ""
+    
+    let myData = ["footExcercise", "Sprinting", "benchpress", "Strength Training"]
     let myData1 = ["Chest day", "Leg Press", "Strength Training", "Running"]
     //var post = [postStruct]()
     
@@ -102,6 +104,7 @@ class WorkoutRoutineVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "Routinedetails") as? RoutineDetails
+        vc?.names = myData1[indexPath.row]
         self.navigationController?.pushViewController(vc!, animated: true)
     }
 
