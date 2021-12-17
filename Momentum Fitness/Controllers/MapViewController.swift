@@ -22,9 +22,10 @@ class MapViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.delegate = self
         tableView?.dataSource = self
+        
         searchFor(query: "Gym")
-        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,17 +40,20 @@ class MapViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\n\n\n\n\n selected cell \(indexPath.row) \n\n\n\n\\n")
+        addPinToMap(mapItem: results[indexPath.row])
+    }
+    
     @IBAction func changeSearch(_ sender: UISegmentedControl) {
         
         if (sender.selectedSegmentIndex == 0){
             titleLabel.text = "Gyms Near You"
-            searchFor(query: "Gym")
+            searchFor(query: "Gyms")
         } else if (sender.selectedSegmentIndex == 1){
-            searchFor(query: "Supplement Store")
+            searchFor(query: "Vitamin Stores")
             titleLabel.text = "Supplement Stores Near You"
         }
-        
-        tableView.reloadData()
     }
     
     func searchFor(query: String) {
@@ -70,6 +74,7 @@ class MapViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                 self.results = Array(localSearchResponse!.mapItems[0 ... 4])
             
                 self.addPinToMap(mapItem: self.results[0])
+                self.tableView.reloadData()
             }
         }
     }
@@ -87,13 +92,10 @@ class MapViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         //Set pin coordinates to search response coordinates
         self.pointAnnotation?.coordinate = CLLocationCoordinate2D(latitude: (mapItem.placemark.location?.coordinate.latitude)!, longitude: (mapItem.placemark.location?.coordinate.longitude)!)
-
-        mapItem.placemark.location?.coordinate.latitude
         
         self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: nil)
         
-        
-        self.mapView.centerCoordinate = self.pointAnnotation?.coordinate ?? CLLocationCoordinate2D()
+        self.mapView.setCenter(self.pointAnnotation?.coordinate ?? CLLocationCoordinate2D(), animated: true)
     
         //Add pin to map
         self.mapView.addAnnotation(self.pinAnnotationView?.annotation! as! MKAnnotation)
