@@ -25,17 +25,6 @@ class AccountNavigationVC: UIViewController {
         self.view.backgroundColor = UIColor.init(named: "Theme")
 
         styleTopBar(nav: navigationItem)
-        
-        logoImage  = UIImageView(image: UIImage(named: "logo"))
-        self.view.addSubview(logoImage!)
-        
-        logoImage!.translatesAutoresizingMaskIntoConstraints = false
-        
-        logoImage?.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.20).isActive = true
-        logoImage?.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.10).isActive = true
-        logoImage?.centerXAnchor.constraint(equalToSystemSpacingAfter: self.view.centerXAnchor,  multiplier: 0.33).isActive = true
-        logoImage?.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
-        
 
         text1  = UITextField()
         view.addSubview(text1!)
@@ -135,16 +124,16 @@ class AccountNavigationVC: UIViewController {
     
     @objc func upBtnPressed(sender: UIButton!)
     {
-        let SignInVC = SignInVC()
-        navigationController?.pushViewController(SignInVC, animated: true)
+        //let SignInVC = SignInVC()
+        //navigationController?.pushViewController(SignInVC, animated: true)
     }
     
     
     
     @objc func signUpBtnPressed(sender: UIButton!)
     {
-        let SignupVC = SignupVC()
-        navigationController?.pushViewController(SignupVC, animated: true)
+        //let SignupVC = SignupVC()
+        //navigationController?.pushViewController(SignupVC, animated: true)
     }
     
 }
