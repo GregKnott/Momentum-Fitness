@@ -90,7 +90,7 @@ class AccountNavigationVC: UIViewController {
 
         
 //        signInButton
-//        
+//
 //        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
 //
 //        // Create Google Sign In configuration object.
@@ -124,18 +124,17 @@ class AccountNavigationVC: UIViewController {
     
     @objc func upBtnPressed(sender: UIButton!)
     {
-        //let SignInVC = SignInVC()
-        //navigationController?.pushViewController(SignInVC, animated: true)
+        let SignInVC = SignInVC()
+        navigationController?.pushViewController(SignInVC, animated: true)
     }
     
     
     
     @objc func signUpBtnPressed(sender: UIButton!)
     {
-        //let SignupVC = SignupVC()
-        //navigationController?.pushViewController(SignupVC, animated: true)
+        let SignupVC = SignupVC()
+        navigationController?.pushViewController(SignupVC, animated: true)
     }
     
 }
-
 
