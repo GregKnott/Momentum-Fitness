@@ -51,7 +51,8 @@ class RoutineDetails: UIViewController, UITableViewDataSource, UITableViewDelega
             (snapshot) in
             for workout in snapshot.children{
            let childSnap = workout as! DataSnapshot
-           let value = childSnap.value as? NSDictionary*/
+    
+        let value = childSnap.value as? NSDictionary*/
         
             }
        // })
