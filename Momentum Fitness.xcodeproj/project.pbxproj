@@ -33,10 +33,10 @@
 		874C1187AA8AAD22978AF40D /* Pods_Momentum_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EA20C5532051ED26DCD67A /* Pods_Momentum_FitnessTests.framework */; };
 		C7009D0127573F750025BB6A /* Workout_routine_tableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7009CFF27573F740025BB6A /* Workout_routine_tableViewTableViewCell.swift */; };
 		C7009D0227573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7009D0027573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib */; };
-		C76DE1AB276C35520000FC40 /* RoutinedetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76DE1A9276C35520000FC40 /* RoutinedetailsTableViewCell.swift */; };
-		C76DE1AC276C35520000FC40 /* RoutinedetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76DE1AA276C35520000FC40 /* RoutinedetailsTableViewCell.xib */; };
 		C78AE3C7276152E8003B0E62 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AE3C6276152E8003B0E62 /* ShakingTextField.swift */; };
 		C78AE3C9276180EE003B0E62 /* PulsingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AE3C8276180ED003B0E62 /* PulsingAnimation.swift */; };
+		C7D90FE3276D6BDC009509B3 /* RoutineTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D90FE1276D6BDC009509B3 /* RoutineTableCell.swift */; };
+		C7D90FE4276D6BDC009509B3 /* RoutineTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7D90FE2276D6BDC009509B3 /* RoutineTableCell.xib */; };
 		C9A176FB2617CD2500C72952 /* WorkoutRoutineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */; };
 		C9A177002617D56F00C72952 /* NewWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */; };
 		C9A177052617E39200C72952 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A177042617E39200C72952 /* UserProfileVC.swift */; };
@@ -108,10 +108,10 @@
 		AA202FE910E771CC186C28EE /* Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; path = "Target Support Files/Pods-Momentum Fitness-Momentum FitnessUITests/Pods-Momentum Fitness-Momentum FitnessUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7009CFF27573F740025BB6A /* Workout_routine_tableViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_routine_tableViewTableViewCell.swift; sourceTree = "<group>"; };
 		C7009D0027573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Workout_routine_tableViewTableViewCell.xib; sourceTree = "<group>"; };
-		C76DE1A9276C35520000FC40 /* RoutinedetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinedetailsTableViewCell.swift; sourceTree = "<group>"; };
-		C76DE1AA276C35520000FC40 /* RoutinedetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutinedetailsTableViewCell.xib; sourceTree = "<group>"; };
 		C78AE3C6276152E8003B0E62 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
 		C78AE3C8276180ED003B0E62 /* PulsingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingAnimation.swift; sourceTree = "<group>"; };
+		C7D90FE1276D6BDC009509B3 /* RoutineTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTableCell.swift; sourceTree = "<group>"; };
+		C7D90FE2276D6BDC009509B3 /* RoutineTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutineTableCell.xib; sourceTree = "<group>"; };
 		C9A176FA2617CD2500C72952 /* WorkoutRoutineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRoutineVC.swift; sourceTree = "<group>"; };
 		C9A176FF2617D56F00C72952 /* NewWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutVC.swift; sourceTree = "<group>"; };
 		C9A177042617E39200C72952 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
@@ -239,13 +239,13 @@
 				C9DA6CCA2629F89500524BA8 /* NewWorkoutTableView.swift */,
 				C9DA6CD2262A199600524BA8 /* ActivityTableVC.swift */,
 				37F46F9D262F3201003526E1 /* RoutineDetails.swift */,
-				C76DE1A9276C35520000FC40 /* RoutinedetailsTableViewCell.swift */,
-				C76DE1AA276C35520000FC40 /* RoutinedetailsTableViewCell.xib */,
 				C9ACA9822752BBD400BCEF28 /* TImeTargetVC.swift */,
 				C9ACA9872752BD2C00BCEF28 /* TImerVC.swift */,
 				C78AE3C6276152E8003B0E62 /* ShakingTextField.swift */,
 				C78AE3C8276180ED003B0E62 /* PulsingAnimation.swift */,
 				37C07A0C2762936A00BC68C8 /* MapViewController.swift */,
+				C7D90FE1276D6BDC009509B3 /* RoutineTableCell.swift */,
+				C7D90FE2276D6BDC009509B3 /* RoutineTableCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -410,11 +410,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				375E2AAB2617497A00E1CFCA /* LaunchScreen.storyboard in Resources */,
-				C76DE1AC276C35520000FC40 /* RoutinedetailsTableViewCell.xib in Resources */,
 				3705A99727518C6200181433 /* GoogleService-Info.plist in Resources */,
 				C7009D0227573F750025BB6A /* Workout_routine_tableViewTableViewCell.xib in Resources */,
 				375E2AA82617497A00E1CFCA /* Assets.xcassets in Resources */,
 				375E2AA32617497900E1CFCA /* Main.storyboard in Resources */,
+				C7D90FE4276D6BDC009509B3 /* RoutineTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,8 +558,8 @@
 				379EE8FE2617974400A9B007 /* HomeVC.swift in Sources */,
 				375E2AEB2617852100E1CFCA /* SignupVC.swift in Sources */,
 				C78AE3C9276180EE003B0E62 /* PulsingAnimation.swift in Sources */,
-				C76DE1AB276C35520000FC40 /* RoutinedetailsTableViewCell.swift in Sources */,
 				C9DA6CAA2629E55900524BA8 /* ActivityTableViewCell.swift in Sources */,
+				C7D90FE3276D6BDC009509B3 /* RoutineTableCell.swift in Sources */,
 				375E2AA02617497900E1CFCA /* ViewController.swift in Sources */,
 				375E2AE32617819800E1CFCA /* SignInVC.swift in Sources */,
 				C7009D0127573F750025BB6A /* Workout_routine_tableViewTableViewCell.swift in Sources */,
